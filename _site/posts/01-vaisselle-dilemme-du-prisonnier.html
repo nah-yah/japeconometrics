@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="L’évier déborde par rationalité : un dilemme du prisonnier ordinaire, avec son seuil de patience δ*.">
+
+<title>Défection mutuelle à l’équilibre – The Journal of Applied Personal Econometrics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5e145ff3ea3652a9b9d30a1e60fe8cf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e3f6b98e8a71ad82ee9476b94f53c53d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+      }
+</style>
+<style>
+  .quarto-title-banner { background: linear-gradient(135deg, #1d2b4f 0%, #3c3163 55%, #8a4b6b 100%); }
+</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../logo.svg" alt="" class="navbar-logo light-content">
+    <img src="../logo.svg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">The Journal of Applied Personal Econometrics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">La revue</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Défection mutuelle à l’équilibre</h1>
+            <p class="subtitle lead">Une caractérisation non coopérative de l’évier partagé</p>
+                  <div>
+        <div class="description">
+          L’évier déborde par rationalité : un dilemme du prisonnier ordinaire, avec son seuil de patience δ*.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Dilemme du prisonnier</div>
+                <div class="quarto-category">Biens publics</div>
+                <div class="quarto-category">Coopération</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sommaire</h2>
+   
+  <ul>
+  <li><a href="#résumé" id="toc-résumé" class="nav-link active" data-scroll-target="#résumé">Résumé</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a></li>
+  <li><a href="#littérature" id="toc-littérature" class="nav-link" data-scroll-target="#littérature">2. Littérature</a></li>
+  <li><a href="#le-jeu" id="toc-le-jeu" class="nav-link" data-scroll-target="#le-jeu">3. Le jeu</a></li>
+  <li><a href="#résolution" id="toc-résolution" class="nav-link" data-scroll-target="#résolution">4. Résolution</a>
+  <ul class="collapse">
+  <li><a href="#stratégie-dominante" id="toc-stratégie-dominante" class="nav-link" data-scroll-target="#stratégie-dominante">4.1 Stratégie dominante</a></li>
+  <li><a href="#équilibre-de-nash" id="toc-équilibre-de-nash" class="nav-link" data-scroll-target="#équilibre-de-nash">4.2 Équilibre de Nash</a></li>
+  <li><a href="#le-jeu-répété-et-le-seuil-de-patience" id="toc-le-jeu-répété-et-le-seuil-de-patience" class="nav-link" data-scroll-target="#le-jeu-répété-et-le-seuil-de-patience">4.3 Le jeu répété et le seuil de patience</a></li>
+  </ul></li>
+  <li><a href="#où-le-modèle-casse" id="toc-où-le-modèle-casse" class="nav-link" data-scroll-target="#où-le-modèle-casse">5. Où le modèle casse</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">6. Conclusion</a></li>
+  <li><a href="#références" id="toc-références" class="nav-link" data-scroll-target="#références">Références</a></li>
+  <li><a href="#remerciements" id="toc-remerciements" class="nav-link" data-scroll-target="#remerciements">Remerciements</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><strong>Autrice :</strong> celle qui a lavé<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
+<em>Département d’études stratégiques domestiques, The Journal of Applied Personal Econometrics</em></p>
+<hr>
+<section id="résumé" class="level2">
+<h2 class="anchored" data-anchor-id="résumé">Résumé</h2>
+<p>Partager un évier entre deux colocataires est un jeu non coopératif à information complète, dont la structure de gains est celle du dilemme du prisonnier : laver l’évier produit un bénéfice non excluable (un évier propre profite aux deux occupants indépendamment de l’identité de celui qui a lavé), tandis que l’effort reste, lui, parfaitement excluable. Il en résulte que « Attendre » constitue une stratégie strictement dominante pour chaque joueur, et que l’unique équilibre de Nash en stratégies pures, (Attendre, Attendre), est Pareto-dominé par le profil coopératif (Laver, Laver). Autrement dit, l’évier déborde non par paresse mais par rationalité. Nous établissons le seuil de patience δ* au-delà duquel la coopération devient soutenable dans la version répétée du jeu, et discutons des conditions (réalistes) dans lesquelles ce seuil n’est jamais atteint. Une recommandation de politique domestique est proposée : l’introduction d’un dispositif d’engagement (un tableau de tâches), dont nous notons toutefois qu’il est lui-même un bien public, et donc sujet au problème qu’il prétend résoudre.</p>
+<p><strong>Mots-clés :</strong> dilemme du prisonnier, biens publics, passager clandestin, coopération, évier<br>
+<strong>Codes JEL :</strong> C72 (jeux non coopératifs), D10 (comportement du ménage), D74 (conflit)</p>
+<hr>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<p>L’évier partagé occupe une place curieusement modeste dans la littérature économique, alors même qu’il réunit, sur une surface inférieure à un demi-mètre carré, l’essentiel des pathologies que cette littérature s’emploie par ailleurs à étudier : un bien public, un coût privé, une information complète, et deux agents qui s’observent quotidiennement sans jamais coopérer. Le présent article entreprend de combler ce vide.</p>
+<p>La situation est familière. Deux personnes partagent une cuisine. La vaisselle s’accumule. Chacune préférerait un évier propre à un évier sale ; chacune préférerait, plus encore, que ce soit l’autre qui le rende propre. Le résultat observé (un évier durablement saturé, ponctué d’épisodes de capitulation unilatérale) est généralement attribué à un défaut de caractère. Nous soutenons qu’il s’agit, au contraire, d’un comportement d’équilibre. L’évier ne déborde pas malgré la rationalité des occupants ; il déborde à cause d’elle.</p>
+<p>Nos contributions sont au nombre de trois. Premièrement, nous formalisons le problème comme un jeu 2×2 et montrons qu’il appartient à la classe du dilemme du prisonnier (Tucker, <em>circa</em> 1950 ; Nash, 1951). Deuxièmement, nous dérivons l’équilibre en stratégies dominantes et établissons sa sous-optimalité parétienne. Troisièmement, nous étendons l’analyse au jeu répété et caractérisons le facteur d’escompte critique δ* en deçà duquel la défection demeure l’unique issue, un résultat qui prépare le terrain pour une étude ultérieure du même ménage observé sur une plus longue durée.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>La section 2 situe le problème dans la littérature. La section 3 pose le jeu. La section 4 le résout. La section 5 examine les hypothèses, et le moment précis où la cuisine cesse de leur obéir.</p>
+</section>
+<section id="littérature" class="level2">
+<h2 class="anchored" data-anchor-id="littérature">2. Littérature</h2>
+<p>Le cadre que nous mobilisons remonte à la formalisation du dilemme du prisonnier attribuée à Tucker et à la caractérisation de l’équilibre non coopératif par Nash (1950, 1951). La structure de bien public de l’évier (un évier propre bénéficie à tous, qu’on ait lavé ou non) relève directement de Samuelson (1954) : la propreté est non rivale (votre jouissance d’un évier vide ne diminue pas la mienne) et non excluable (je ne peux pas vous empêcher d’en profiter). Hardin (1968) a décrit la dégradation prévisible des ressources soumises à un tel régime ; nous nous bornons à observer qu’une cuisine est un communal de très petite taille.</p>
+<p>La question de savoir si la répétition de l’interaction restaure la coopération a été tranchée, pour l’essentiel, par Axelrod (1984), dont les tournois ont établi la robustesse des stratégies réciproques. Nous y revenons en section 4.3. La littérature antérieure pertinente inclut également Mère (1994, communication personnelle répétée), dont les contributions, quoique non publiées, furent insistantes.</p>
+</section>
+<section id="le-jeu" class="level2">
+<h2 class="anchored" data-anchor-id="le-jeu">3. Le jeu</h2>
+<p>Soient deux joueurs, <span class="math inline">i \in \{A, B\}</span>, qui partagent un évier. Chacun choisit simultanément une action dans l’ensemble <span class="math inline">\{L, W\}</span>, où <span class="math inline">L</span> dénote « Laver » et <span class="math inline">W</span> « Attendre » (<em>wait</em>). Le jeu est à information complète : les préférences décrites ci-dessous sont connaissance commune.</p>
+<p>Un évier propre procure à chaque joueur un bénéfice <span class="math inline">b &gt; 0</span>, indépendamment de l’identité de celui qui l’a rendu propre : c’est la propriété de non-exclusion. Laver impose un coût d’effort <span class="math inline">\gamma &gt; 0</span> à qui lave. Lorsque les deux lavent, l’effort se partage : chacun supporte <span class="math inline">\gamma/2</span>. Lorsque personne ne lave, l’évier reste sale, le bénéfice <span class="math inline">b</span> n’est pas réalisé, et chaque joueur subit en outre une désutilité <span class="math inline">d &gt; 0</span> liée à la contemplation prolongée de l’évier.</p>
+<p>Les gains se résument dans la matrice suivante (gains de A, gains de B) :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>A &nbsp;B</th>
+<th><strong>Laver (L)</strong></th>
+<th><strong>Attendre (W)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Laver (L)</strong></td>
+<td><span class="math inline">\;b - \tfrac{\gamma}{2},\; b - \tfrac{\gamma}{2}\;</span></td>
+<td><span class="math inline">\;b - \gamma,\; b\;</span></td>
+</tr>
+<tr class="even">
+<td><strong>Attendre (W)</strong></td>
+<td><span class="math inline">\;b,\; b - \gamma\;</span></td>
+<td><span class="math inline">\;-d,\; -d\;</span></td>
+</tr>
+</tbody>
+</table>
+<p>Nous posons l’hypothèse de paramètres suivante, qui correspond au cas empiriquement saillant :</p>
+<p><span class="math display">\gamma &gt; 0, \quad b &gt; \tfrac{\gamma}{2}, \quad d &gt; 0. \tag{1}</span></p>
+<p>La condition <span class="math inline">b &gt; \gamma/2</span> garantit que le profil coopératif (L, L) procure un gain net positif : un évier propre vaut la moitié d’un effort. Si cette condition échoue (c’est-à-dire si l’on déteste laver plus qu’on n’aime la propreté), le ménage relève d’une analyse différente, que nous n’abordons pas ici.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+</section>
+<section id="résolution" class="level2">
+<h2 class="anchored" data-anchor-id="résolution">4. Résolution</h2>
+<section id="stratégie-dominante" class="level3">
+<h3 class="anchored" data-anchor-id="stratégie-dominante">4.1 Stratégie dominante</h3>
+<p>Considérons le choix de A, action par action, selon ce que peut faire B.</p>
+<p><em>Si B lave (L).</em> A compare son gain à Laver, <span class="math inline">b - \gamma/2</span>, à son gain à Attendre, <span class="math inline">b</span>. Puisque <span class="math inline">\gamma/2 &gt; 0</span>, on a <span class="math inline">b &gt; b - \gamma/2</span>. <strong>Attendre l’emporte.</strong></p>
+<p><em>Si B attend (W).</em> A compare son gain à Laver, <span class="math inline">b - \gamma</span>, à son gain à Attendre, <span class="math inline">-d</span>. Sous l’hypothèse (1), Attendre l’emporte si et seulement si <span class="math inline">-d &gt; b - \gamma</span>, soit <span class="math inline">\gamma &gt; b + d</span>. Nous distinguons deux régimes :</p>
+<ul>
+<li><strong>Régime de défection franche</strong> (<span class="math inline">\gamma &gt; b + d</span>) : Attendre l’emporte quoi que fasse B. La stratégie est strictement dominante.</li>
+<li><strong>Régime de capitulation</strong> (<span class="math inline">\gamma &lt; b + d</span>) : si B attend, A préfère laver plutôt que subir l’évier saturé. La dominance stricte est rompue. Le régime empiriquement dominant (celui où l’évier finit <em>toujours</em> par être lavé, mais tard, et par la même personne) est le régime de capitulation. Nous l’examinons en 4.2. Le régime de défection franche, plus rare, correspond aux ménages qui achètent de la vaisselle jetable.</li>
+</ul>
+</section>
+<section id="équilibre-de-nash" class="level3">
+<h3 class="anchored" data-anchor-id="équilibre-de-nash">4.2 Équilibre de Nash</h3>
+<p>Dans le régime de capitulation, la dominance stricte ne tranche pas, mais le jeu conserve un unique équilibre de Nash en stratégies pures. Vérifions les profils.</p>
+<p>Le profil (W, W) n’est <em>pas</em> un équilibre : face à W, chaque joueur préfère dévier vers L (puisque <span class="math inline">b - \gamma &gt; -d</span>). Les profils (L, L) ne sont pas non plus des équilibres : face à L, chacun préfère dévier vers W (puisque <span class="math inline">b &gt; b - \gamma/2</span>). Restent les profils asymétriques. Dans (L, W), A lave et B attend : A obtient <span class="math inline">b - \gamma</span>, et ne peut améliorer son sort en déviant (dévier le ramènerait à <span class="math inline">-d &lt; b - \gamma</span>) ; B obtient <span class="math inline">b</span>, son meilleur gain possible, et ne dévie pas. <strong>(L, W) est un équilibre de Nash.</strong> Par symétrie, (W, L) l’est aussi.</p>
+<p>Le jeu possède donc deux équilibres asymétriques, dans chacun desquels une seule personne lave et l’autre profite. L’identité du laveur n’est pas déterminée par le modèle. Elle est déterminée, dans la pratique, par celui des deux qui a le seuil de tolérance <span class="math inline">d</span> le plus bas, c’est-à-dire par la personne que l’évier dérange en premier. Le modèle prédit ainsi un résultat que nos données autobiographiques confirment sans réserve : ce n’est jamais la même personne qui craque, sauf que si.</p>
+</section>
+<section id="le-jeu-répété-et-le-seuil-de-patience" class="level3">
+<h3 class="anchored" data-anchor-id="le-jeu-répété-et-le-seuil-de-patience">4.3 Le jeu répété et le seuil de patience</h3>
+<p>L’évier n’est pas lavé une fois. Il est lavé, ou non, chaque jour, indéfiniment, par les mêmes deux personnes. Cette répétition change-t-elle l’analyse ?</p>
+<p>Soit <span class="math inline">\delta \in [0, 1)</span> le facteur d’escompte commun, qui mesure le poids accordé au bien-être futur du ménage. Considérons la stratégie de réciprocité (<em>grim trigger</em>) : « je lave tant que tu as lavé ; à la première fois où tu attends pendant que je lave, j’attends pour toujours ». La coopération (L, L) à chaque période est soutenable comme équilibre si et seulement si le gain de la défection unique ne compense pas la punition future qu’elle déclenche. Le gain immédiat à dévier est <span class="math inline">b - (b - \gamma/2) = \gamma/2</span> ; la perte future, actualisée, est la différence entre le flux coopératif et le flux de défection mutuelle. La condition de soutenabilité s’écrit :</p>
+<p><span class="math display">\frac{\gamma/2}{1 - \delta} \;\le\; \frac{(b - \gamma/2) - (-d)}{1-\delta} \cdot \delta \quad\Longleftrightarrow\quad \delta \;\ge\; \delta^\* \equiv \frac{\gamma/2}{\,b + d - \gamma/2\,}. \tag{2}</span></p>
+<p>La coopération est soutenable si et seulement si <span class="math inline">\delta \ge \delta^\*</span>. Le seuil <span class="math inline">\delta^\*</span> croît avec le coût de l’effort <span class="math inline">\gamma</span> et décroît avec le bénéfice de la propreté <span class="math inline">b</span> et la désutilité de l’évier sale <span class="math inline">d</span>. La lecture est directe : la vaisselle partagée tient lorsque les deux personnes accordent assez de poids à l’avenir de leur cohabitation. C’est ce que l’on nomme, dans la littérature, <em>l’ombre du futur</em>.</p>
+<p>Le corollaire est moins réconfortant. Lorsque l’horizon se raccourcit (l’un des deux s’apprête à déménager, ou la relation se dégrade), δ chute, finit par passer sous δ*, et la coopération s’effondre. Le modèle prédit que l’évier se remplit dans les semaines qui précèdent une séparation. Nous ne commentons pas ce résultat.</p>
+</section>
+</section>
+<section id="où-le-modèle-casse" class="level2">
+<h2 class="anchored" data-anchor-id="où-le-modèle-casse">5. Où le modèle casse</h2>
+<p>Le modèle repose sur trois hypothèses qu’il convient d’exposer, car la cuisine les viole régulièrement.</p>
+<p><strong>Simultanéité.</strong> Nous avons supposé les actions choisies simultanément. En réalité, l’évier est un jeu séquentiel à information imparfaite : on observe l’état de l’évier, non l’intention de l’autre. Une assiette laissée le matin peut être un acte de défection ou une promesse de retour. Le modèle ne distingue pas les deux. Les occupants non plus, ce qui est l’origine de la plupart des conflits.</p>
+<p><strong>Symétrie des gains.</strong> Nous avons supposé <span class="math inline">b</span>, <span class="math inline">\gamma</span> et <span class="math inline">d</span> identiques entre joueurs. C’est faux. La désutilité <span class="math inline">d</span> de l’évier sale varie considérablement d’une personne à l’autre, et c’est précisément cette asymétrie, et non un quelconque sens des responsabilités, qui détermine qui lave. La personne au <span class="math inline">d</span> élevé n’est pas plus vertueuse. Elle est simplement moins capable de ne pas voir.</p>
+<p><strong>Connaissance commune des préférences.</strong> Nous avons supposé que chacun connaît les gains de l’autre. Mais une part substantielle du conflit domestique consiste, justement, à contester l’évaluation que l’autre fait de <span class="math inline">d</span> (« ça ne te dérange donc pas ? »), c’est-à-dire à renégocier la matrice elle-même. Le modèle prend la matrice comme donnée. Le ménage la prend comme sujet de dispute.</p>
+<p>Enfin, le modèle est muet sur le cas, théoriquement marginal mais empiriquement décisif, où l’un des deux lave <em>en silence et de façon ostentatoire</em>, ce qui transforme un acte coopératif en signal, voire en représailles. Cette configuration relève de la signalisation coûteuse, et nous la renvoyons à un article ultérieur.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">6. Conclusion</h2>
+<p>L’évier déborde parce que chacun, de son propre point de vue, agit raisonnablement. C’est le scandale tranquille du dilemme du prisonnier : deux personnes parfaitement raisonnables fabriquent ensemble un résultat qu’aucune des deux ne veut. La propreté est un bien que l’on partage, l’effort un coût que l’on porte seul, et tant que cette asymétrie tient, attendre reste la réponse individuellement juste. Une seule chose retient la coopération de s’effondrer, la condition <span class="math inline">\delta \ge \delta^*</span> : il faut que les deux accordent à l’avenir de leur cohabitation plus de poids qu’au répit d’un soir. Sous ce seuil, la vaisselle gagne, et elle gagne souvent.</p>
+<p>En matière de politique domestique, la théorie suggère un dispositif d’engagement : un tableau de répartition des tâches, qui attache un coût de réputation à la défection et transforme ainsi le jeu. Nous notons toutefois, sans pouvoir le résoudre, que la tenue à jour d’un tel tableau est elle-même un bien public non excluable, et donc soumise exactement au dilemme qu’il est censé dissoudre. Le tableau, dans nos observations, n’a jamais été rempli au-delà du jeudi de la première semaine.</p>
+<hr>
+</section>
+<section id="références" class="level2">
+<h2 class="anchored" data-anchor-id="références">Références</h2>
+<p>Axelrod, R. (1984). <em>The Evolution of Cooperation</em>. New York : Basic Books.</p>
+<p>Hardin, G. (1968). « The Tragedy of the Commons ». <em>Science</em>, 162(3859), 1243–1248.</p>
+<p>Nash, J. F. (1950). « Equilibrium Points in n-Person Games ». <em>PNAS</em>, 36(1), 48–49.</p>
+<p>Nash, J. F. (1951). « Non-Cooperative Games ». <em>Annals of Mathematics</em>, 54(2), 286–295.</p>
+<p>Samuelson, P. A. (1954). « The Pure Theory of Public Expenditure ». <em>Review of Economics and Statistics</em>, 36(4), 387–389.</p>
+<p>Mère (1994). Communication personnelle. Récurrente.</p>
+<hr>
+</section>
+<section id="remerciements" class="level2">
+<h2 class="anchored" data-anchor-id="remerciements">Remerciements</h2>
+<p>Je remercie l’autre occupant, sans qui ce problème n’existerait pas, et grâce à qui il existe. Aucun financement extérieur n’a été reçu ; le coût <span class="math inline">\gamma</span> a été supporté intégralement par l’autrice, comme le prévoit l’équilibre (L, W). L’autrice déclare un conflit d’intérêts : elle voulait que le modèle donne raison à une seule des deux parties, et constate avec une certaine froideur que c’est le cas.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>L’unique autrice a financé cette recherche en nature, c’est-à-dire en faisant la vaisselle.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Cette étude ultérieure est déjà en cours. Elle ne se passe pas bien.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>On la rencontre néanmoins. Elle se reconnaît à l’odeur.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

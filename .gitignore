@@ -1,0 +1,5 @@
+/.quarto/
+/.claude/
+/.vscode/
+**/*.quarto_ipynb
+

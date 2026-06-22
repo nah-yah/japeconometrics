@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "The Journal of Applied Personal Econometrics"
+  description: "Théorie des jeux, théorie de la décision, économétrie : appliquées aux situations domestiques et sentimentales que l'économie avait laissées de côté."
+  navbar:
+    logo: logo.svg
+    left:
+      - text: "Articles"
+        href: index.qmd
+      - text: "La revue"
+        href: about.qmd
+
+format:
+  html:
+    theme: [cosmo, theme.scss]   # base claire + surcouche maison
+    toc: true                    # table des matières par article
+    toc-title: "Sommaire"
+    grid:
+      body-width: 720px          # mesure resserrée, lisibilité académique
+    html-math-method: katex      # voir §6
+    code-tools: false
+    anchor-sections: true
+    title-block-banner: true
+    title-block-banner-color: white

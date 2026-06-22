@@ -1,0 +1,19 @@
+---
+title: ""
+title-block-banner: false
+listing:
+  contents: posts
+  sort: "order"                  # tri par numéro d'article, pas par date
+  type: default
+  fields: [title, subtitle, description, categories]   # PAS de "date" → rien de temporel
+  field-display-names:
+    subtitle: "Sous-titre"
+  categories: true               # filtre par bloc dans la marge
+  feed: false
+page-layout: full
+---
+
+::: {.jape-masthead}
+# The Journal of Applied Personal Econometrics
+Théorie des jeux, décision, économétrie : aucun bien domestique n'est trop petit pour une matrice de gains. Comité de lecture : un seul lecteur.
+:::

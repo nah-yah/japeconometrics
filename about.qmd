@@ -1,0 +1,33 @@
+---
+title: "La revue"
+subtitle: "À propos du *Journal of Applied Personal Econometrics*"
+title-block-banner: true
+include-in-header:
+  text: |
+    <style>
+      .quarto-title-banner { background: linear-gradient(135deg, #1d2b4f 0%, #4a3b5c 50%, #c9762f 100%); }
+    </style>
+page-layout: article
+---
+
+## Mission
+
+*The Journal of Applied Personal Econometrics* applique de vrais modèles, théorie des jeux, théorie de la décision, économétrie, à des situations domestiques et sentimentales que la littérature économique a, jusqu'ici, jugées indignes d'elle : la vaisselle, les textos qui restent sans réponse. Tout ce qui s'accumule entre deux personnes faute d'avoir été formalisé à temps relève aussi de son ressort.
+
+La revue applique aux disputes de couple et de colocation les mêmes outils qu'on réserve d'ordinaire aux oligopoles et aux traités commerciaux : jeux non coopératifs, équilibres de Nash. Le principe éditorial est que rien n'est trop petit pour une matrice de gains.
+
+## Programme
+
+La revue publie deux articles par mois sur douze mois, en trois volets : théorie des jeux, décision, économétrie. La progression est pédagogique, chaque volet construit sur les outils du précédent, et l'ordre de parution n'est pas négociable.
+
+## Comité éditorial
+
+La revue compte un seul lecteur, qui en est aussi l'unique réviseur. Les conflits d'intérêts ne sont donc jamais déclarés vu qu'ils sont structurels.
+
+## Politique de soumission
+
+Les articles sont acceptés sans révision, l'autrice n'ayant personne d'autre à qui les soumettre. Le facteur d'impact de la revue se mesure en conversations, pas toutes vivantes.
+
+## Disponibilité des données
+
+Les données qui servent d'illustration aux articles sont des fils de discussion réels. Leur disponibilité varie ; certains se sont éteints à l'équilibre, comme prévu par le modèle qui les décrit.

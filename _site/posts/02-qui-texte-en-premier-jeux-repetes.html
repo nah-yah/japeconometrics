@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Un seul délai mal interprété suffit à éteindre un fil de discussion, sans qu’aucun des deux joueurs n’ait jamais défecté en premier.">
+
+<title>Personne n’a défecté en premier – The Journal of Applied Personal Econometrics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5e145ff3ea3652a9b9d30a1e60fe8cf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e3f6b98e8a71ad82ee9476b94f53c53d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+      }
+</style>
+<style>
+  .quarto-title-banner { background: linear-gradient(135deg, #5b2a3a 0%, #7a3b3b 55%, #c9762f 100%); }
+</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../logo.svg" alt="" class="navbar-logo light-content">
+    <img src="../logo.svg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">The Journal of Applied Personal Econometrics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">La revue</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Personne n’a défecté en premier</h1>
+            <p class="subtitle lead">Réciprocité, latence bruitée et l’extinction d’un fil de discussion à l’équilibre</p>
+                  <div>
+        <div class="description">
+          Un seul délai mal interprété suffit à éteindre un fil de discussion, sans qu’aucun des deux joueurs n’ait jamais défecté en premier.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Jeux répétés</div>
+                <div class="quarto-category">Monitoring imparfait</div>
+                <div class="quarto-category">Réciprocité</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sommaire</h2>
+   
+  <ul>
+  <li><a href="#résumé" id="toc-résumé" class="nav-link active" data-scroll-target="#résumé">Résumé</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a></li>
+  <li><a href="#le-fil-comme-jeu-répété" id="toc-le-fil-comme-jeu-répété" class="nav-link" data-scroll-target="#le-fil-comme-jeu-répété">2. Le fil comme jeu répété</a></li>
+  <li><a href="#le-seuil-de-patience" id="toc-le-seuil-de-patience" class="nav-link" data-scroll-target="#le-seuil-de-patience">3. Le seuil de patience</a></li>
+  <li><a href="#la-réciprocité-sous-bruit" id="toc-la-réciprocité-sous-bruit" class="nav-link" data-scroll-target="#la-réciprocité-sous-bruit">4. La réciprocité sous bruit</a>
+  <ul class="collapse">
+  <li><a href="#lécho" id="toc-lécho" class="nav-link" data-scroll-target="#lécho">4.1 L’écho</a></li>
+  <li><a href="#le-pardon-comme-correction-derreur" id="toc-le-pardon-comme-correction-derreur" class="nav-link" data-scroll-target="#le-pardon-comme-correction-derreur">4.2 Le pardon comme correction d’erreur</a></li>
+  </ul></li>
+  <li><a href="#là-où-lasynchronie-reprend-ses-droits" id="toc-là-où-lasynchronie-reprend-ses-droits" class="nav-link" data-scroll-target="#là-où-lasynchronie-reprend-ses-droits">5. Là où l’asynchronie reprend ses droits</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#références" id="toc-références" class="nav-link" data-scroll-target="#références">Références</a></li>
+  <li><a href="#remerciements" id="toc-remerciements" class="nav-link" data-scroll-target="#remerciements">Remerciements</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><strong>Autrice :</strong> celle qui tenait le compte<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
+<em>Département d’études stratégiques domestiques, division des communications asynchrones, The Journal of Applied Personal Econometrics</em></p>
+<hr>
+<section id="résumé" class="level2">
+<h2 class="anchored" data-anchor-id="résumé">Résumé</h2>
+<p>Cet article modélise la correspondance entre deux personnes comme un jeu répété, dont le jeu d’étape appartient à la classe du dilemme du prisonnier déjà caractérisée pour l’évier partagé (Autrice, 2026, dans ce volume). Chaque période, chaque joueur choisit un niveau d’effort, répondre vite et avec chaleur ou attendre, sous une structure de gains où le bénéfice du contact est partagé et le coût de l’exposition est privé. Nous établissons le facteur d’escompte critique δ* au-delà duquel la coopération, c’est-à-dire un fil vivant, est soutenable par réciprocité, et montrons que δ* croît avec l’avantage à être poursuivi plutôt que d’avoir à poursuivre. Nous introduisons ensuite la caractéristique propre au support textuel, que l’évier ne possédait pas : la latence est observée avec bruit. Un délai de réponse peut signaler le désintérêt ou ne rien signaler du tout (un téléphone resté dans une poche). Nous montrons que sous la stratégie de réciprocité stricte (tit-for-tat), une seule défection perçue, qu’elle ait été voulue ou non, se propage en représailles symétriques et fait décroître la fréquence de coopération de long terme jusqu’au silence. Le fil meurt alors sans qu’aucun des deux joueurs n’ait défecté en premier au sens propre. Nous montrons enfin que le pardon, formalisé comme une réciprocité généreuse (Nowak et Sigmund, 1992), n’est pas une faiblesse mais le terme correcteur d’erreur que le canal exige, et que le joueur qui tient parfaitement les comptes est précisément celui qui enterre le plus de conversations.</p>
+<p><strong>Mots-clés :</strong> jeux répétés, tit-for-tat, monitoring imparfait, folk theorem, réciprocité, fil de discussion<br>
+<strong>Codes JEL :</strong> C72 (jeux non coopératifs), C73 (jeux répétés et dynamiques), D74 (conflit)</p>
+<hr>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<p>La correspondance entre deux personnes connaît une fin caractéristique : après un temps d’échange, les réponses se raréfient jusqu’à cesser tout à fait. Interrogée, chacune des deux soutient qu’elle n’a rien arrêté, qu’elle attendait encore. L’autopsie du fil le confirme : on n’y trouve pas de rupture, pas de dernier message resté sans réponse par décision, seulement un ralentissement réciproque jusqu’au point fixe du silence. Le présent article rend compte de cette extinction sans coupable.</p>
+<p>Le cadre est celui du jeu répété. Le jeu d’étape, joué une fois, est un dilemme du prisonnier : nous avons établi ailleurs, pour le cas de l’évier partagé, qu’une situation où le bénéfice est non excluable et le coût strictement privé satisfait les conditions de Tucker, et que l’attente y domine (Autrice, 2026, dans ce volume). La correspondance partage cette structure. Le bénéfice d’un fil vivant est partagé, qu’on ait écrit le premier ou non ; le coût de tendre la main, lui, n’est supporté que par celui qui la tend. Ce qui distingue le fil de l’évier n’est donc pas le jeu d’étape, qui est le même, mais deux propriétés que l’évier n’avait pas : l’interaction se répète, et l’action de l’autre n’est jamais observée directement. On voit un délai. On ne voit pas ce qui l’a causé.</p>
+<p>La répétition ouvre la possibilité de la coopération, comme l’a établi la littérature sur les supergames (Friedman, 1971) et sur le folk theorem (Fudenberg et Maskin, 1986), et comme l’ont confirmé les tournois d’Axelrod (1984) pour la stratégie de réciprocité. Le monitoring imparfait, lui, la referme. L’essentiel de notre contribution porte sur ce second point. Nous montrons que la réciprocité, qui sauve la coopération quand on observe parfaitement l’autre, la détruit dès qu’on ne l’observe qu’à travers le bruit du délai.</p>
+<p>La section 2 pose le fil comme jeu répété. La section 3 dérive le seuil de patience δ*. La section 4, qui porte le poids de l’article, traite de la réciprocité sous bruit. La section 5 expose les hypothèses et le moment où la messagerie cesse de leur obéir.</p>
+</section>
+<section id="le-fil-comme-jeu-répété" class="level2">
+<h2 class="anchored" data-anchor-id="le-fil-comme-jeu-répété">2. Le fil comme jeu répété</h2>
+<p>Soient deux joueurs, <span class="math inline">i \in \{A, B\}</span>. À chaque période <span class="math inline">t = 0, 1, 2, \dots</span>, chacun choisit un niveau d’effort dans <span class="math inline">\{H, L\}</span>, où <span class="math inline">H</span> dénote « investir » (répondre vite et chaleureusement, ou relancer le premier) et <span class="math inline">L</span> « se retenir » (attendre, ou laisser l’autre porter le fil). Un fil vivant procure à chaque joueur un bénéfice de contact <span class="math inline">v &gt; 0</span>, partagé indépendamment de qui a écrit. Investir coûte un prix d’exposition <span class="math inline">c &gt; 0</span>, supporté par le seul investisseur : c’est le coût de s’être montré le plus engagé des deux.</p>
+<p>Les gains du jeu d’étape se rangent selon l’ordre standard du dilemme du prisonnier, <span class="math inline">T &gt; R &gt; P &gt; S</span> :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>A &nbsp;B</th>
+<th><strong>Investir (H)</strong></th>
+<th><strong>Se retenir (L)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Investir (H)</strong></td>
+<td><span class="math inline">R,\; R</span></td>
+<td><span class="math inline">S,\; T</span></td>
+</tr>
+<tr class="even">
+<td><strong>Se retenir (L)</strong></td>
+<td><span class="math inline">T,\; S</span></td>
+<td><span class="math inline">P,\; P</span></td>
+</tr>
+</tbody>
+</table>
+<p>L’interprétation des quatre gains fixe le sens du modèle.</p>
+<ul>
+<li><span class="math inline">R</span> (récompense) : l’échange mutuel et vivant. Le meilleur état durable, mais chacun y a payé son exposition.</li>
+<li><span class="math inline">T</span> (tentation) : être poursuivi sans avoir à poursuivre. On reçoit le contact sans en payer le coût, augmenté du petit retour d’amour-propre de celui qu’on relance. C’est le gain le plus élevé.</li>
+<li><span class="math inline">S</span> (gain de la dupe) : avoir écrit le premier, longuement, et reçu un délai ou un mot. L’exposition sans la réciprocité. C’est le pire.</li>
+<li><span class="math inline">P</span> (punition) : le silence partagé. Le fil meurt. Mauvais, mais sans humiliation, et c’est ce dernier point qui fixe l’ordre.</li>
+</ul>
+<p>L’ordre <span class="math inline">P &gt; S</span> mérite qu’on s’y arrête, car il porte toute la situation. Le silence mutuel est préféré à la main tendue sans retour non parce qu’il est agréable, mais parce qu’il préserve ce que la main tendue expose. Le joueur préfère laisser le fil mourir plutôt que de le porter seul sous le regard de l’autre. Cette préférence n’est pas une pathologie. C’est l’inégalité <span class="math inline">c &gt; 0</span> écrite du point de vue de celui qui refuse de la payer seul.</p>
+<p>Nous retenons en outre l’hypothèse auxiliaire usuelle du dilemme du prisonnier :</p>
+<p><span class="math display">2R &gt; T + S. \tag{1}</span></p>
+<p>Elle garantit qu’alterner les rôles (l’un investit pendant que l’autre se retient, puis l’inverse) rapporte en moyenne moins que la coopération soutenue. Cette condition, inerte dans le jeu d’étape, deviendra décisive en section 4 : c’est elle qui fait qu’un malentendu, même parfaitement compensé par un malentendu symétrique, laisse les deux joueurs plus mal qu’avant.</p>
+<p>Le jeu d’étape étant un dilemme du prisonnier, son unique équilibre en stratégies dominantes est <span class="math inline">(L, L)</span> : se retenir l’emporte quel que soit le choix de l’autre.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Joué une fois, le fil meurt. La question est de savoir si la répétition le sauve.</p>
+</section>
+<section id="le-seuil-de-patience" class="level2">
+<h2 class="anchored" data-anchor-id="le-seuil-de-patience">3. Le seuil de patience</h2>
+<p>Soit <span class="math inline">\delta \in [0, 1)</span> le facteur d’escompte commun. Il mesure le poids que chaque joueur accorde à l’avenir du fil relativement au soir même. Considérons la stratégie de réciprocité par déclenchement (<em>grim trigger</em>) : investir tant que l’autre investit, et se retenir pour toujours dès la première fois où l’autre se retient pendant qu’on investissait.</p>
+<p>La coopération <span class="math inline">(H, H)</span> à chaque période est soutenable comme équilibre si et seulement si le gain immédiat à dévier ne compense pas la punition future qu’elle déclenche. Coopérer indéfiniment rapporte <span class="math inline">R / (1 - \delta)</span>. Dévier maintenant rapporte <span class="math inline">T</span> aujourd’hui, puis <span class="math inline">P</span> à chaque période suivante, soit <span class="math inline">T + \delta P / (1 - \delta)</span>. La condition de soutenabilité s’écrit :</p>
+<p><span class="math display">\frac{R}{1 - \delta} \;\ge\; T + \frac{\delta P}{1 - \delta}.</span></p>
+<p>En multipliant par <span class="math inline">(1 - \delta) &gt; 0</span> et en regroupant :</p>
+<p><span class="math display">R \ge (1 - \delta) T + \delta P \quad\Longleftrightarrow\quad \delta (T - P) \ge T - R \quad\Longleftrightarrow\quad \delta \;\ge\; \delta^* \equiv \frac{T - R}{T - P}. \tag{2}</span></p>
+<p>La coopération est soutenable si et seulement si <span class="math inline">\delta \ge \delta^*</span>. Les deux dénominateurs et numérateurs sont positifs, puisque <span class="math inline">T &gt; R</span> et <span class="math inline">T &gt; P</span>, donc <span class="math inline">\delta^* \in (0, 1)</span>. La lecture en est directe. Le seuil croît avec l’écart <span class="math inline">T - R</span>, c’est-à-dire avec l’avantage qu’il y a à être poursuivi plutôt qu’à poursuivre : plus il est doux d’être relancé, plus il faut de patience pour continuer soi-même à relancer. Le seuil décroît avec l’amplitude <span class="math inline">T - P</span>, l’enjeu total du fil.</p>
+<p>À titre illustratif, et sans présenter ces nombres comme autre chose qu’une convention, prenons les gains canoniques des tournois d’Axelrod (1984), <span class="math inline">T = 5</span>, <span class="math inline">R = 3</span>, <span class="math inline">P = 1</span>, <span class="math inline">S = 0</span>. Ils vérifient l’hypothèse (1), car <span class="math inline">2R = 6 &gt; 5 = T + S</span>. Le seuil vaut alors</p>
+<p><span class="math display">\delta^\* = \frac{5 - 3}{5 - 1} = \frac{1}{2}.</span></p>
+<p>Le fil tient si et seulement si chacun accorde au lendemain de la correspondance au moins la moitié du poids qu’il accorde au soir même. C’est, sous un autre nom, l’ombre du futur. Le corollaire, déjà rencontré pour l’évier, vaut ici aussi : lorsque l’horizon se raccourcit, parce que l’un sait qu’il partira, ou qu’une autre personne est entrée dans le calcul, <span class="math inline">\delta</span> chute, passe sous <span class="math inline">\delta^*</span>, et la réciprocité cesse de tenir. Ce cas relève de l’horizon fini et non du bruit, et nous ne le traitons pas ici.</p>
+</section>
+<section id="la-réciprocité-sous-bruit" class="level2">
+<h2 class="anchored" data-anchor-id="la-réciprocité-sous-bruit">4. La réciprocité sous bruit</h2>
+<p>La section précédente sauve le fil sous une hypothèse que la messagerie ne respecte pas : que chacun observe ce que l’autre a fait. Or on n’observe pas l’effort de l’autre. On observe sa latence, et la latence est ambiguë. Soit <span class="math inline">\varepsilon \in (0, 1)</span> la probabilité qu’un investissement voulu (<span class="math inline">H</span>) soit réalisé ou perçu comme une retenue (<span class="math inline">L</span>). Les sources de ce bruit sont familières et toutes équivalentes du point de vue du modèle : le message non vu, le téléphone déchargé, la réponse chaleureuse mais tardive lue comme un froid, la réponse prompte mais brève lue comme une corvée. Dans tous ces cas, A a investi et B enregistre une retenue. L’action <span class="math inline">H</span> et son ombre <span class="math inline">L</span> deviennent, pour l’observateur, indiscernables avec probabilité <span class="math inline">\varepsilon</span>. Sous monitoring parfait (<span class="math inline">\varepsilon = 0</span>), deux joueurs jouant la réciprocité stricte (tit-for-tat : reproduire à la période <span class="math inline">t</span> ce que l’autre a fait en <span class="math inline">t-1</span>), partis de la coopération, jouent <span class="math inline">(H, H)</span> à chaque période et le fil ne meurt jamais. C’est le résultat d’Axelrod (1984), et la raison pour laquelle la réciprocité est tenue, à juste titre, pour robuste. Tout le renversement vient de <span class="math inline">\varepsilon &gt; 0</span>.</p>
+<section id="lécho" class="level3">
+<h3 class="anchored" data-anchor-id="lécho">4.1 L’écho</h3>
+<p>Sous <span class="math inline">\varepsilon &gt; 0</span>, ce résultat se renverse. Supposons les deux joueurs en coopération, et survienne un seul événement de bruit : A a investi, mais B enregistre <span class="math inline">L</span>. La suite est mécanique. À la période suivante, B, qui applique la réciprocité, se retient. A, qui sait avoir investi, lit la retenue de B comme une défection non provoquée, et se retient à son tour. B lit alors la retenue de A comme une représaille injuste, et persévère. Une seule perception erronée, qu’aucun des deux n’a voulue, se propage en représailles symétriques. C’est l’effet d’écho, déjà signalé par Axelrod.</p>
+<p>Deux régimes en résultent selon la structure du bruit. Si l’erreur reste unique, le jeu entre dans un cycle où les rôles s’alternent, chacun punissant avec un temps de retard : A se retient pendant que B investit, puis l’inverse, indéfiniment. Le gain moyen par période y vaut <span class="math inline">(T + S)/2</span>. L’hypothèse (1) garantit que ce cycle est strictement pire que la coopération, puisque <span class="math inline">(T + S)/2 &lt; R</span>. Le malentendu, même rigoureusement compensé par son malentendu miroir, laisse les deux joueurs sous l’état qu’ils occupaient avant lui. Si le bruit se répète, ou si l’un des deux, par lassitude, cesse d’alterner, le jeu tombe dans le point fixe <span class="math inline">(L, L)</span> et y reste. Le fil descend ainsi une échelle dont chaque barreau est un équilibre : de <span class="math inline">R</span> vers le cycle, du cycle vers <span class="math inline">P</span>. Avec les gains illustratifs de la section 3, cette descente mène de 3 à 2,5, puis à 1.</p>
+<p>Le modèle conclut donc que la mort du fil est l’écho à l’équilibre d’un unique événement non observé, dont l’origine la plus probable est que quelqu’un dormait. Aucun des deux joueurs n’a défecté en premier au sens où il l’aurait choisi. La première défection était un téléphone dans une poche, et tout le reste en a découlé par réciprocité.</p>
+</section>
+<section id="le-pardon-comme-correction-derreur" class="level3">
+<h3 class="anchored" data-anchor-id="le-pardon-comme-correction-derreur">4.2 Le pardon comme correction d’erreur</h3>
+<p>La réciprocité stricte échoue parce qu’elle traite chaque retenue observée comme une décision. Le remède formel est connu : la réciprocité généreuse (Nowak et Sigmund, 1992), qui consiste à pardonner une défection observée avec une probabilité <span class="math inline">g &gt; 0</span>, c’est-à-dire à réinvestir parfois alors même qu’on vient d’enregistrer une retenue. Pour <span class="math inline">g</span> bien choisi en fonction de <span class="math inline">\varepsilon</span>, la coopération redevient soutenable malgré le bruit : le pardon casse l’écho avant qu’il ne se verrouille.</p>
+<p>Le sens domestique de ce résultat est moins confortable que sa forme. Le pardon n’y est pas une vertu mais un terme correcteur d’erreur, exigé par le canal, et son refus a un coût mesurable en fils morts. Le joueur qui applique la réciprocité stricte, celui qui tient le compte exact de qui a répondu en dernier et n’écrit jamais deux fois de suite sans réponse, est précisément celui que le bruit condamne. Sa rigueur comptable, qui lui paraît de la dignité, est l’algorithme qui enterre le plus de conversations. Le joueur généreux, qui réécrit parfois sans avoir été relancé et accepte donc d’occuper le rang <span class="math inline">S</span> de temps à autre, est le seul dont les fils survivent. Le modèle ne classe pas ces deux comportements par dignité. Il observe seulement que les fils du second survivent, et pas ceux du premier.</p>
+</section>
+</section>
+<section id="là-où-lasynchronie-reprend-ses-droits" class="level2">
+<h2 class="anchored" data-anchor-id="là-où-lasynchronie-reprend-ses-droits">5. Là où l’asynchronie reprend ses droits</h2>
+<p>Quatre hypothèses tiennent le modèle debout. La messagerie les dément à tour de rôle.</p>
+<p><strong>Que l’autre joue.</strong> Tout l’appareil, de la réciprocité au seuil <span class="math inline">\delta^*</span>, suppose que l’autre est un joueur stratégique qui réagit à nos actions et tient, comme nous, un compte. Si cette hypothèse tombe, le modèle ne se contente pas de perdre en précision : il perd son objet. Car peut-être l’autre ne joue pas. Peut-être a-t-il vu le message plus tard, n’a rien calculé, ne tient aucun score, et sa latence ne code aucune intention parce qu’il n’y a pas d’intention à coder. Alors il n’existe ni défection à punir ni écho à craindre, seulement une vie qui se poursuit ailleurs, à son propre rythme, indifférente à la matrice. C’est l’effondrement le plus complet que le cadre puisse subir, et le plus fréquent. Nous le mentionnons pour mémoire, sans le formaliser davantage.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p><strong>L’observabilité de l’effort.</strong> Nous avons logé tout le bruit dans la latence, comme si le contenu, lui, était clair. Il ne l’est pas. Un message long et tiède et un message court et chaud sont également ambigus, et la dimension de l’effort qui compte vraiment, la chaleur, n’a pas d’horodatage. Le modèle observe le délai parce que le délai est la seule chose qu’un fil mesure. Ce n’est pas la même chose que d’observer l’effort.</p>
+<p><strong>La symétrie de l’escompte.</strong> Nous avons supposé <span class="math inline">\delta</span> commun. Il ne l’est presque jamais. Les deux joueurs n’accordent pas le même poids à l’avenir du fil, et c’est cette asymétrie, et non un défaut de réciprocité, qui détermine souvent qui se retient le premier. Celui dont le <span class="math inline">\delta</span> est le plus bas se retient sans bruit, par simple calcul d’horizon, et le modèle de cette section, qui cherche un coupable dans le canal, ne le verra pas.</p>
+<p><strong>Le premier message.</strong> Le modèle prend un fil déjà vivant et étudie comment il meurt. Il est muet sur sa naissance, c’est-à-dire sur le bras de fer qui précède le tout premier texto, où chacun attend que l’autre rompe le silence initial. Cette situation n’est pas un jeu répété mais une guerre d’usure, dont la résolution exige un autre appareil. Nous la renvoyons à une étude ultérieure consacrée aux disputes qui s’éternisent, où l’enjeu n’est plus de savoir qui se retient mais qui tiendra le plus longtemps.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Une conversation peut mourir sans que personne ne l’ait tuée. Il suffit que deux personnes tiennent leurs comptes avec assez de rigueur, et qu’entre elles passe un canal assez ambigu pour fabriquer des défections à partir de rien. La réciprocité, qui est la chose raisonnable à faire quand on voit clairement l’autre, devient la chose qui enterre le fil quand on ne le voit qu’à travers le délai. Le seuil <span class="math inline">\delta \ge \delta^*</span> dit à quelle condition un fil vivant le reste : il faut accorder à son avenir plus de poids qu’au répit d’un soir. Mais la section 4 ajoute une condition que le seuil ne contient pas, et qui pèse plus lourd : il faut accepter, de temps en temps, d’écrire le premier sans avoir été relancé, c’est-à-dire d’occuper sciemment le rang de la dupe pour absorber le bruit du canal.</p>
+<p>C’est précisément ce que la fierté refuse. Le joueur qui ne tend jamais la main deux fois de suite, qui garde le compte exact et n’en montre rien, croit protéger quelque chose. Le modèle indique ce qu’il protège, et à quel prix. Il protège son rang dans la matrice, et il le paie en fils morts dont aucun ne portait, à l’autopsie, de première défection. La dignité de ne pas répondre trop vite est un bien réel. Elle se mesure, comme tous les biens du ménage, en ce qu’elle coûte, et elle coûte les conversations qu’on aurait pu garder en réécrivant une fois de trop.</p>
+<hr>
+</section>
+<section id="références" class="level2">
+<h2 class="anchored" data-anchor-id="références">Références</h2>
+<p>Axelrod, R. (1984). <em>The Evolution of Cooperation</em>. New York : Basic Books.</p>
+<p>Friedman, J. W. (1971). « A Non-cooperative Equilibrium for Supergames ». <em>Review of Economic Studies</em>, 38(1), 1–12.</p>
+<p>Fudenberg, D. et Maskin, E. (1986). « The Folk Theorem in Repeated Games with Discounting or with Incomplete Information ». <em>Econometrica</em>, 54(3), 533–554.</p>
+<p>Nowak, M. A. et Sigmund, K. (1992). « Tit for tat in heterogeneous populations ». <em>Nature</em>, 355, 250–253.</p>
+<p>Autrice (2026). « Défection mutuelle à l’équilibre : une caractérisation non coopérative de l’évier partagé ». <em>The Journal of Applied Personal Econometrics</em>, dans ce volume.</p>
+<hr>
+</section>
+<section id="remerciements" class="level2">
+<h2 class="anchored" data-anchor-id="remerciements">Remerciements</h2>
+<p>Je remercie l’autre partie, dont la latence a fourni l’essentiel des données et dont le silence a fourni la conclusion.</p>
+<p><strong>Disponibilité des données.</strong> Le fil de discussion ayant servi d’illustration n’est plus consultable. L’autre partie a cessé de répondre, ce qui clôt l’échantillon à une date que l’autrice connaît avec une précision qu’elle préférerait ne pas avoir.</p>
+<p><strong>Conflit d’intérêts.</strong> L’autrice tenait le compte. Elle affirmait le contraire.</p>
+<p><strong>Financement.</strong> Aucun. Le coût d’exposition <span class="math inline">c</span> a été supporté, comme toujours, par celle qui a écrit la première.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>L’autrice n’a tendu la main la première à aucun moment de cette étude, ce qui en garantit l’indépendance.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>La dérivation est celle de l’article sur l’évier. Nous ne la répétons pas, par économie, et parce que la refaire reviendrait à admettre qu’elle ne suffisait pas.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Le formaliser supposerait d’admettre l’hypothèse, ce que l’autrice n’est pas en mesure de faire dans l’immédiat.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
