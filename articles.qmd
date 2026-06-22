@@ -1,0 +1,19 @@
+---
+title: ""
+title-block-banner: false
+listing:
+  contents: posts
+  sort: "order"                  # tri par numéro d'article, pas par date
+  type: default
+  fields: [title, subtitle, description, categories]   # PAS de "date" → rien de temporel
+  field-display-names:
+    subtitle: "Sous-titre"
+  categories: true               # filtre par bloc dans la marge
+  feed: false
+page-layout: full
+---
+
+::: {.jape-masthead}
+# Tous les articles
+Théorie des jeux, décision, économétrie, dans l'ordre du calendrier éditorial, pas dans celui de la publication.
+:::

@@ -9,7 +9,7 @@ website:
     logo: logo.svg
     left:
       - text: "Articles"
-        href: index.qmd
+        href: articles.qmd
       - text: "La revue"
         href: about.qmd
 
