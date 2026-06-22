@@ -2,7 +2,7 @@
 title: "Personne n'a défecté en premier"
 subtitle: "Réciprocité, latence bruitée et l'extinction d'un fil de discussion à l'équilibre"
 description: "Un seul délai mal interprété suffit à éteindre un fil de discussion, sans qu'aucun des deux joueurs n'ait jamais défecté en premier."
-categories: ["Jeux répétés", "Monitoring imparfait", "Réciprocité"]
+categories: ["Jeux répétés", "Réciprocité"]
 order: 2
 title-block-banner: true
 include-in-header:
@@ -146,8 +146,6 @@ Autrice (2026). « Défection mutuelle à l'équilibre : une caractérisation no
 
 Je remercie l'autre partie, dont la latence a fourni l'essentiel des données et dont le silence a fourni la conclusion.
 
-**Disponibilité des données.** Le fil de discussion ayant servi d'illustration n'est plus consultable. L'autre partie a cessé de répondre, ce qui clôt l'échantillon à une date que l'autrice connaît avec une précision qu'elle préférerait ne pas avoir.
-
 **Conflit d'intérêts.** L'autrice tenait le compte. Elle affirmait le contraire.
 
-**Financement.** Aucun. Le coût d'exposition $c$ a été supporté, comme toujours, par celle qui a écrit la première.
+**Contributions de l'autrice.** Conceptualisation, investigation, analyse et rédaction : l'autrice. Les données ont été fournies par l'autre partie, qui n'a pas répondu aux demandes de relecture.

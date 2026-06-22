@@ -120,10 +120,8 @@ Autrice (2026b). « Personne n'a défecté en premier : réciprocité, latence b
 
 Je remercie mes colocataires, dont la confiance a constitué la principale ressource épuisée au cours de cette étude.
 
-**Disponibilité des données.** Le contenu du réfrigérateur ayant servi d'illustration a été, selon les cas, consommé, périmé ou revendiqué. Aucun échantillon ne subsiste.
-
-**Conflit d'intérêts.** L'autrice possédait dans ce frigo une étagère qu'elle désignait comme commune.
-
 **Financement.** Aucun. Le lait a été racheté, les rares fois où il le fut, par quelqu'un d'autre.
+
+**Disponibilité du matériel.** Le seul matériel subsistant de l'étude est une étagère, que l'autrice continue de désigner comme commune.
 
 [^2]: L'étiquette nominative au feutre est, dans nos relevés, le premier signe clinique de l'enclosure, et le plus fiable.

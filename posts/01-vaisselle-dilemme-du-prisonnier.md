@@ -2,7 +2,7 @@
 title: "Défection mutuelle à l'équilibre"
 subtitle: "Une caractérisation non coopérative de l'évier partagé"
 description: "L'évier déborde par rationalité : un dilemme du prisonnier ordinaire, avec son seuil de patience δ*."
-categories: ["Dilemme du prisonnier", "Biens publics", "Coopération"]
+categories: ["Dilemme du prisonnier", "Biens publics", "Passager clandestin", "Coopération"]
 order: 1
 title-block-banner: true
 include-in-header:

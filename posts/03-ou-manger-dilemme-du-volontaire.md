@@ -2,7 +2,7 @@
 title: "Moi, ça m'est égal"
 subtitle: "Le choix collectif d'un restaurant comme dilemme du volontaire, avec dérivation de l'effet de la taille du groupe sur la probabilité qu'une décision soit prise"
 description: "Choisir un restaurant en groupe est un dilemme du volontaire : nul ne veut être celui qui décide, et le groupe décide d'autant moins qu'il est nombreux."
-categories: ["Dilemme du volontaire", "Biens publics", "Diffusion de la responsabilité"]
+categories: ["Dilemme du volontaire", "Biens publics", "Diffusion de la responsabilité", "Stratégies mixtes", "Taille du groupe"]
 order: 3
 title-block-banner: true
 include-in-header:
@@ -128,6 +128,4 @@ Je remercie le groupe, qui n'a, lui non plus, rien décidé.
 
 **Disponibilité des données.** Les délibérations ayant servi d'illustration n'ont abouti à aucun restaurant. Le groupe a fini par manger séparément, ce qui a clos l'observation.
 
-**Conflit d'intérêts.** L'autrice avait une préférence. Elle ne l'a pas formulée.
-
-**Financement.** Aucun. Personne n'a voulu décider qui paierait.
+**Consentement.** Les convives n'ont pas été informés qu'ils constituaient un échantillon. Comme leur indécision n'a pas été provoquée, l'autrice tient le consentement pour acquis.

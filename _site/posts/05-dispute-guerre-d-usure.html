@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="L’évier déborde par rationalité : un dilemme du prisonnier ordinaire, avec son seuil de patience δ*.">
+<meta name="description" content="Le réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.">
 
-<title>Défection mutuelle à l’équilibre – The Journal of Applied Personal Econometrics</title>
+<title>Avoir le dernier mot – The Journal of Applied Personal Econometrics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       }
 </style>
 <style>
-  .quarto-title-banner { background: linear-gradient(135deg, #1d2b4f 0%, #3c3163 55%, #8a4b6b 100%); }
+  .quarto-title-banner { background: linear-gradient(135deg, #1b3a4b 0%, #2f6690 55%, #6ea8c9 100%); }
 </style>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
@@ -177,18 +177,17 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Défection mutuelle à l’équilibre</h1>
-            <p class="subtitle lead">Une caractérisation non coopérative de l’évier partagé</p>
+      <h1 class="title">Avoir le dernier mot</h1>
+            <p class="subtitle lead">La dispute prolongée comme guerre d’usure, avec la dissipation intégrale de l’enjeu à l’équilibre</p>
                   <div>
         <div class="description">
-          L’évier déborde par rationalité : un dilemme du prisonnier ordinaire, avec son seuil de patience δ*.
+          Le réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Dilemme du prisonnier</div>
-                <div class="quarto-category">Biens publics</div>
-                <div class="quarto-category">Passager clandestin</div>
-                <div class="quarto-category">Coopération</div>
+                <div class="quarto-category">Tragédie des communs</div>
+                <div class="quarto-category">Ressource commune</div>
+                <div class="quarto-category">Externalités</div>
               </div>
                   </div>
   </div>
@@ -212,16 +211,11 @@ window.Quarto = {
   <ul>
   <li><a href="#résumé" id="toc-résumé" class="nav-link active" data-scroll-target="#résumé">Résumé</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a></li>
-  <li><a href="#littérature" id="toc-littérature" class="nav-link" data-scroll-target="#littérature">2. Littérature</a></li>
-  <li><a href="#le-jeu" id="toc-le-jeu" class="nav-link" data-scroll-target="#le-jeu">3. Le jeu</a></li>
-  <li><a href="#résolution" id="toc-résolution" class="nav-link" data-scroll-target="#résolution">4. Résolution</a>
-  <ul class="collapse">
-  <li><a href="#stratégie-dominante" id="toc-stratégie-dominante" class="nav-link" data-scroll-target="#stratégie-dominante">4.1 Stratégie dominante</a></li>
-  <li><a href="#équilibre-de-nash" id="toc-équilibre-de-nash" class="nav-link" data-scroll-target="#équilibre-de-nash">4.2 Équilibre de Nash</a></li>
-  <li><a href="#le-jeu-répété-et-le-seuil-de-patience" id="toc-le-jeu-répété-et-le-seuil-de-patience" class="nav-link" data-scroll-target="#le-jeu-répété-et-le-seuil-de-patience">4.3 Le jeu répété et le seuil de patience</a></li>
-  </ul></li>
-  <li><a href="#où-le-modèle-casse" id="toc-où-le-modèle-casse" class="nav-link" data-scroll-target="#où-le-modèle-casse">5. Où le modèle casse</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">6. Conclusion</a></li>
+  <li><a href="#le-jeu-sans-fin-déterminée" id="toc-le-jeu-sans-fin-déterminée" class="nav-link" data-scroll-target="#le-jeu-sans-fin-déterminée">2. Le jeu sans fin déterminée</a></li>
+  <li><a href="#sans-mémoire-et-sans-gain" id="toc-sans-mémoire-et-sans-gain" class="nav-link" data-scroll-target="#sans-mémoire-et-sans-gain">3. Sans mémoire et sans gain</a></li>
+  <li><a href="#le-vainqueur" id="toc-le-vainqueur" class="nav-link" data-scroll-target="#le-vainqueur">4. Le vainqueur</a></li>
+  <li><a href="#lenjeu-se-consume" id="toc-lenjeu-se-consume" class="nav-link" data-scroll-target="#lenjeu-se-consume">5. L’enjeu se consume</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#références" id="toc-références" class="nav-link" data-scroll-target="#références">Références</a></li>
   <li><a href="#remerciements" id="toc-remerciements" class="nav-link" data-scroll-target="#remerciements">Remerciements</a></li>
   </ul>
@@ -234,117 +228,70 @@ window.Quarto = {
 
 
 
-<p><strong>Autrice :</strong> celle qui a lavé<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
-<em>Département d’études stratégiques domestiques, The Journal of Applied Personal Econometrics</em></p>
+<p><strong>Autrice :</strong> celle qui a eu le dernier mot<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
+<em>Département d’études stratégiques domestiques, section des conflits domestiques prolongés, The Journal of Applied Personal Econometrics</em></p>
 <hr>
 <section id="résumé" class="level2">
 <h2 class="anchored" data-anchor-id="résumé">Résumé</h2>
-<p>Partager un évier entre deux colocataires est un jeu non coopératif à information complète, dont la structure de gains est celle du dilemme du prisonnier : laver l’évier produit un bénéfice non excluable (un évier propre profite aux deux occupants indépendamment de l’identité de celui qui a lavé), tandis que l’effort reste, lui, parfaitement excluable. Il en résulte que « Attendre » constitue une stratégie strictement dominante pour chaque joueur, et que l’unique équilibre de Nash en stratégies pures, (Attendre, Attendre), est Pareto-dominé par le profil coopératif (Laver, Laver). Autrement dit, l’évier déborde non par paresse mais par rationalité. Nous établissons le seuil de patience δ* au-delà duquel la coopération devient soutenable dans la version répétée du jeu, et discutons des conditions (réalistes) dans lesquelles ce seuil n’est jamais atteint. Une recommandation de politique domestique est proposée : l’introduction d’un dispositif d’engagement (un tableau de tâches), dont nous notons toutefois qu’il est lui-même un bien public, et donc sujet au problème qu’il prétend résoudre.</p>
-<p><strong>Mots-clés :</strong> dilemme du prisonnier, biens publics, passager clandestin, coopération, évier<br>
-<strong>Codes JEL :</strong> C72 (jeux non coopératifs), D10 (comportement du ménage), D74 (conflit)</p>
+<p>Une dispute qui s’éternise est une guerre d’usure (Maynard Smith, 1974). Deux personnes se disputent un enjeu, avoir raison ou obtenir que l’autre cède, et chacune choisit combien de temps tenir avant de lâcher. Celle qui tient le plus longtemps l’emporte, mais les deux paient, à chaque instant où le conflit dure, un coût qu’aucune concession ne leur rend. Nous montrons d’abord qu’aucun équilibre symétrique en stratégies pures n’existe : si l’une savait quand l’autre cédera, elle tiendrait un instant de plus. Il reste deux types d’équilibres. Dans les équilibres asymétriques, l’une cède d’emblée et l’autre jamais, et le conflit se résout sans coût parce que les rôles sont connus. Dans l’équilibre symétrique en temps continu, chacune cède selon un instant aléatoire de taux constant <span class="math inline">\lambda = c/v</span>, de sorte que la durée de la dispute est sans mémoire : sa probabilité de finir dans la minute qui vient ne dépend pas du temps déjà écoulé. Surtout, le gain espéré de cet équilibre est nul. La guerre consomme en moyenne l’enjeu tout entier, et avoir le dernier mot vaut, en espérance, exactement ce qu’il a coûté, c’est-à-dire rien. Nous montrons enfin que rien dans le modèle ne relie la victoire au fait d’avoir raison, et que l’enjeu lui-même se dégrade à mesure qu’on se le dispute.</p>
+<p><strong>Mots-clés :</strong> guerre d’usure, jeu de temporisation, équilibre en stratégies mixtes, dissipation de rente, conflit, absence de mémoire<br>
+<strong>Codes JEL :</strong> C72 (jeux non coopératifs), C73 (jeux dynamiques), D74 (conflit)</p>
 <hr>
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
-<p>L’évier partagé occupe une place curieusement modeste dans la littérature économique, alors même qu’il réunit, sur une surface inférieure à un demi-mètre carré, l’essentiel des pathologies que cette littérature s’emploie par ailleurs à étudier : un bien public, un coût privé, une information complète, et deux agents qui s’observent quotidiennement sans jamais coopérer. Le présent article entreprend de combler ce vide.</p>
-<p>La situation est familière. Deux personnes partagent une cuisine. La vaisselle s’accumule. Chacune préférerait un évier propre à un évier sale ; chacune préférerait, plus encore, que ce soit l’autre qui le rende propre. Le résultat observé (un évier durablement saturé, ponctué d’épisodes de capitulation unilatérale) est généralement attribué à un défaut de caractère. Nous soutenons qu’il s’agit, au contraire, d’un comportement d’équilibre. L’évier ne déborde pas malgré la rationalité des occupants ; il déborde à cause d’elle.</p>
-<p>Nos contributions sont au nombre de trois. Premièrement, nous formalisons le problème comme un jeu 2×2 et montrons qu’il appartient à la classe du dilemme du prisonnier (Tucker, <em>circa</em> 1950 ; Nash, 1951). Deuxièmement, nous dérivons l’équilibre en stratégies dominantes et établissons sa sous-optimalité parétienne. Troisièmement, nous étendons l’analyse au jeu répété et caractérisons le facteur d’escompte critique δ* en deçà duquel la défection demeure l’unique issue, un résultat qui prépare le terrain pour une étude ultérieure du même ménage observé sur une plus longue durée.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-<p>La section 2 situe le problème dans la littérature. La section 3 pose le jeu. La section 4 le résout. La section 5 examine les hypothèses, et le moment précis où la cuisine cesse de leur obéir.</p>
+<p>Certaines disputes ne se terminent pas, elles s’arrêtent. La différence n’est pas mince. Une dispute qui se termine a été tranchée par un argument ; une dispute qui s’arrête a simplement épuisé l’un des deux, sans que rien soit résolu, souvent sans qu’on se souvienne encore du grief initial. Le présent article traite de la seconde, et la tient pour le résultat d’équilibre d’un jeu où l’on ne gagne pas en ayant raison mais en restant le dernier.</p>
+<p>Le jeu n’est pas celui des articles précédents. Pour la correspondance (Autrice, 2026b), la question était de savoir qui rendrait l’effort de l’autre, et la coopération restait possible. Ici, l’effort des deux parties va dans le même sens, tenir, et c’est précisément ce parallélisme qui rend le conflit coûteux : tant que ni l’une ni l’autre ne cède, le coût court pour les deux. La structure est celle de la guerre d’usure, introduite par Maynard Smith (1974) pour les conflits animaux, généralisée par Bishop et Cannings (1978), et portée en économie par Bulow et Klemperer (1999), où deux agents se disputent un bien indivisible en supportant un coût qui croît avec la durée du litige. Le dernier debout l’emporte. Les deux ont saigné.</p>
+<p>La section 2 pose le jeu et montre qu’il n’a pas de solution déterminée. La section 3 caractérise son équilibre symétrique, sans mémoire et sans gain. La section 4 examine qui l’emporte, et établit que ce n’est pas qui l’on croit ni pour les raisons qu’on croit. La section 5 expose les hypothèses, dont la première à céder est que l’enjeu reste intact pendant qu’on se le dispute.</p>
 </section>
-<section id="littérature" class="level2">
-<h2 class="anchored" data-anchor-id="littérature">2. Littérature</h2>
-<p>Le cadre que nous mobilisons remonte à la formalisation du dilemme du prisonnier attribuée à Tucker et à la caractérisation de l’équilibre non coopératif par Nash (1950, 1951). La structure de bien public de l’évier (un évier propre bénéficie à tous, qu’on ait lavé ou non) relève directement de Samuelson (1954) : la propreté est non rivale (votre jouissance d’un évier vide ne diminue pas la mienne) et non excluable (je ne peux pas vous empêcher d’en profiter). Hardin (1968) a décrit la dégradation prévisible des ressources soumises à un tel régime ; nous nous bornons à observer qu’une cuisine est un communal de très petite taille.</p>
-<p>La question de savoir si la répétition de l’interaction restaure la coopération a été tranchée, pour l’essentiel, par Axelrod (1984), dont les tournois ont établi la robustesse des stratégies réciproques. Nous y revenons en section 4.3. La littérature antérieure pertinente inclut également Mère (1994, communication personnelle répétée), dont les contributions, quoique non publiées, furent insistantes.</p>
+<section id="le-jeu-sans-fin-déterminée" class="level2">
+<h2 class="anchored" data-anchor-id="le-jeu-sans-fin-déterminée">2. Le jeu sans fin déterminée</h2>
+<p>Deux joueurs, <span class="math inline">i \in \{A, B\}</span>, se disputent un enjeu de valeur <span class="math inline">v &gt; 0</span>, qui revient à celui qui tient quand l’autre cède. Chacun choisit un instant de concession <span class="math inline">t_i \ge 0</span>. Tant que les deux tiennent, chacun supporte un coût au taux <span class="math inline">c &gt; 0</span> par unité de temps : c’est la pénibilité du conflit ouvert, la tension et la soirée gâchée, payée des deux côtés aussi longtemps que dure le différend. Si <span class="math inline">i</span> cède le premier, à l’instant <span class="math inline">t_i &lt; t_j</span>, alors <span class="math inline">i</span> a payé <span class="math inline">c\,t_i</span> et n’obtient rien, tandis que <span class="math inline">j</span> obtient l’enjeu en ayant payé le même <span class="math inline">c\,t_i</span>. Les gains sont donc</p>
+<p><span class="math display">u_i = -\,c\,t_i \quad \text{si } i \text{ cède le premier}, \qquad u_i = v - c\,t_j \quad \text{si } j \text{ cède le premier}. \tag{1}</span></p>
+<p>Aucun profil symétrique en stratégies pures n’est un équilibre. Supposons que les deux prévoient de céder à un même instant déterminé <span class="math inline">T</span>. Chacun gagnerait alors à tenir un instant de plus : pour un coût supplémentaire négligeable, il fait céder l’autre et empoche <span class="math inline">v</span>. La concession à <span class="math inline">T</span> ne résiste donc pas, et comme l’argument vaut pour tout <span class="math inline">T</span>, il n’existe pas d’instant déterminé auquel les deux cèdent. La dispute n’a pas de fin prévisible.</p>
+<p>Deux familles d’équilibres subsistent, que les sections suivantes traitent séparément. Dans les équilibres asymétriques, l’un cède à l’instant initial et l’autre ne cède jamais : le premier obtient zéro, le second obtient <span class="math inline">v</span>, et nul coût n’est encouru puisque le conflit se résout avant d’avoir duré. Dans l’équilibre symétrique, chacun cède selon une loi de probabilité. La première famille décrit la dispute qui n’a pas lieu, parce qu’on sait d’avance qui pliera. La seconde décrit celle qui s’éternise.</p>
 </section>
-<section id="le-jeu" class="level2">
-<h2 class="anchored" data-anchor-id="le-jeu">3. Le jeu</h2>
-<p>Soient deux joueurs, <span class="math inline">i \in \{A, B\}</span>, qui partagent un évier. Chacun choisit simultanément une action dans l’ensemble <span class="math inline">\{L, W\}</span>, où <span class="math inline">L</span> dénote « Laver » et <span class="math inline">W</span> « Attendre » (<em>wait</em>). Le jeu est à information complète : les préférences décrites ci-dessous sont connaissance commune.</p>
-<p>Un évier propre procure à chaque joueur un bénéfice <span class="math inline">b &gt; 0</span>, indépendamment de l’identité de celui qui l’a rendu propre : c’est la propriété de non-exclusion. Laver impose un coût d’effort <span class="math inline">\gamma &gt; 0</span> à qui lave. Lorsque les deux lavent, l’effort se partage : chacun supporte <span class="math inline">\gamma/2</span>. Lorsque personne ne lave, l’évier reste sale, le bénéfice <span class="math inline">b</span> n’est pas réalisé, et chaque joueur subit en outre une désutilité <span class="math inline">d &gt; 0</span> liée à la contemplation prolongée de l’évier.</p>
-<p>Les gains se résument dans la matrice suivante (gains de A, gains de B) :</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>A / B</th>
-<th><strong>Laver (L)</strong></th>
-<th><strong>Attendre (W)</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Laver (L)</strong></td>
-<td><span class="math inline">\;b - \tfrac{\gamma}{2},\; b - \tfrac{\gamma}{2}\;</span></td>
-<td><span class="math inline">\;b - \gamma,\; b\;</span></td>
-</tr>
-<tr class="even">
-<td><strong>Attendre (W)</strong></td>
-<td><span class="math inline">\;b,\; b - \gamma\;</span></td>
-<td><span class="math inline">\;-d,\; -d\;</span></td>
-</tr>
-</tbody>
-</table>
-<p>Nous posons l’hypothèse de paramètres suivante, qui correspond au cas empiriquement saillant :</p>
-<p><span class="math display">\gamma &gt; 0, \quad b &gt; \tfrac{\gamma}{2}, \quad d &gt; 0. \tag{1}</span></p>
-<p>La condition <span class="math inline">b &gt; \gamma/2</span> garantit que le profil coopératif (L, L) procure un gain net positif : un évier propre vaut la moitié d’un effort. Si cette condition échoue (c’est-à-dire si l’on déteste laver plus qu’on n’aime la propreté), le ménage relève d’une analyse différente, que nous n’abordons pas ici.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<section id="sans-mémoire-et-sans-gain" class="level2">
+<h2 class="anchored" data-anchor-id="sans-mémoire-et-sans-gain">3. Sans mémoire et sans gain</h2>
+<p>Cherchons l’équilibre symétrique, dans lequel chaque joueur cède selon une même loi sur <span class="math inline">[0, \infty)</span>. Pour que mélanger soit rationnel, chaque joueur doit être indifférent entre céder maintenant et tenir encore un instant, à tout moment où le conflit dure. Tenir un instant <span class="math inline">dt</span> de plus coûte <span class="math inline">c\,dt</span> avec certitude. Le bénéfice de tenir est la probabilité que l’autre cède dans cet instant, soit <span class="math inline">\lambda\,dt</span> si l’adversaire cède au taux <span class="math inline">\lambda</span>, multipliée par l’enjeu <span class="math inline">v</span>. L’indifférence s’écrit</p>
+<p><span class="math display">c\,dt = \lambda\,v\,dt \quad\Longleftrightarrow\quad \lambda = \frac{c}{v}. \tag{2}</span></p>
+<p>À l’équilibre symétrique, chacun cède donc à taux constant <span class="math inline">\lambda = c/v</span>, c’est-à-dire que son instant de concession suit une loi exponentielle de paramètre <span class="math inline">c/v</span>. Deux conséquences en découlent, qui forment le cœur de l’article.</p>
+<p>La première est l’absence de mémoire. La loi exponentielle est la seule qui la possède : la probabilité que la dispute s’arrête dans la minute qui vient est la même qu’elle dure depuis dix minutes ou depuis trois heures. La durée déjà écoulée n’informe en rien sur la durée restante, qui garde la même espérance. La conviction, au cœur d’une dispute longue, que « ça ne peut plus durer bien longtemps » est sans fondement : le conflit n’a pas d’âge, et chaque minute s’ouvre sur la même attente que la première. La dispute ne se rapproche pas de sa fin en durant ; elle dure, simplement.</p>
+<p>La seconde conséquence est la dissipation. Céder à l’instant initial appartient au support de la loi d’équilibre, et procure un gain nul, puisqu’on ne paie alors aucun coût et n’obtient aucun enjeu. Or à l’équilibre en stratégies mixtes, toutes les actions du support procurent le même gain. Le gain d’équilibre de la guerre d’usure est donc nul, pour chacun des deux joueurs. L’enjeu <span class="math inline">v</span>, tout entier, est consommé en moyenne par le coût du conflit. Avoir le dernier mot rapporte, en espérance, exactement zéro : non parce que le dernier mot n’a pas de valeur, mais parce que la guerre qu’il faut livrer pour l’obtenir en coûte autant.</p>
+<p>À titre illustratif, et sans donner à ces nombres d’autre statut que celui d’une convention, posons <span class="math inline">v = 10</span> et <span class="math inline">c = 1</span>. Le taux de concession vaut <span class="math inline">\lambda = 0{,}1</span> par heure, et la dispute, qui s’arrête à la première des deux concessions, dure en moyenne <span class="math inline">v/(2c) = 5</span> heures. Au terme de ces cinq heures, en moyenne, le vainqueur a obtenu un enjeu qui valait dix et payé un conflit qui coûtait autant, pour un gain net que le modèle chiffre à zéro de part et d’autre.</p>
 </section>
-<section id="résolution" class="level2">
-<h2 class="anchored" data-anchor-id="résolution">4. Résolution</h2>
-<section id="stratégie-dominante" class="level3">
-<h3 class="anchored" data-anchor-id="stratégie-dominante">4.1 Stratégie dominante</h3>
-<p>Considérons le choix de A, action par action, selon ce que peut faire B.</p>
-<p><em>Si B lave (L).</em> A compare son gain à Laver, <span class="math inline">b - \gamma/2</span>, à son gain à Attendre, <span class="math inline">b</span>. Puisque <span class="math inline">\gamma/2 &gt; 0</span>, on a <span class="math inline">b &gt; b - \gamma/2</span>. <strong>Attendre l’emporte.</strong></p>
-<p><em>Si B attend (W).</em> A compare son gain à Laver, <span class="math inline">b - \gamma</span>, à son gain à Attendre, <span class="math inline">-d</span>. Sous l’hypothèse (1), Attendre l’emporte si et seulement si <span class="math inline">-d &gt; b - \gamma</span>, soit <span class="math inline">\gamma &gt; b + d</span>. Nous distinguons deux régimes :</p>
-<ul>
-<li><strong>Régime de défection franche</strong> (<span class="math inline">\gamma &gt; b + d</span>) : Attendre l’emporte quoi que fasse B. La stratégie est strictement dominante.</li>
-<li><strong>Régime de capitulation</strong> (<span class="math inline">\gamma &lt; b + d</span>) : si B attend, A préfère laver plutôt que subir l’évier saturé. La dominance stricte est rompue. Le régime empiriquement dominant (celui où l’évier finit <em>toujours</em> par être lavé, mais tard, et par la même personne) est le régime de capitulation. Nous l’examinons en 4.2. Le régime de défection franche, plus rare, correspond aux ménages qui achètent de la vaisselle jetable.</li>
-</ul>
+<section id="le-vainqueur" class="level2">
+<h2 class="anchored" data-anchor-id="le-vainqueur">4. Le vainqueur</h2>
+<p>Reste à savoir qui l’emporte, et la réponse tient en deux temps.</p>
+<p>Lorsque les rôles sont connus, l’un des équilibres asymétriques s’impose, et le conflit se résout à l’instant initial : celui dont il est établi qu’il pliera plie, sans qu’on en arrive à la guerre. C’est le cas des disputes qui n’éclatent jamais vraiment, parce que les deux savent déjà laquelle des deux cédera. Ce savoir n’est pas inscrit dans les gains. Il vient d’ailleurs, de l’histoire des disputes passées et de la réputation qu’elles ont laissée, c’est-à-dire de la répétition (Autrice, 2026b) : on plie vite aujourd’hui parce qu’on a toujours plié, et la rapidité de la résolution mesure alors moins une entente qu’une hiérarchie acquise. Les couples qui ne se disputent jamais ne sont pas nécessairement ceux qui s’accordent. Ce sont parfois ceux où il a été tranché, une fois pour toutes, qui aurait le dernier mot.</p>
+<p>Lorsque les rôles ne sont pas connus, on tombe dans l’équilibre symétrique de la section 3, et la dispute s’éternise. Mais dans aucun des deux cas la victoire ne récompense la justesse. L’enjeu <span class="math inline">v</span> mesure ce que vaut, pour chacun, le fait de l’emporter, et le coût <span class="math inline">c</span> ce que lui pèse le conflit ; ni l’un ni l’autre n’encode le fait d’avoir raison. Le modèle est donc muet, par construction, sur la question que les disputeurs croient trancher. Il dit qui tiendra le plus longtemps, jamais qui méritait de gagner, et ces deux choses n’ont aucune raison de coïncider.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </section>
-<section id="équilibre-de-nash" class="level3">
-<h3 class="anchored" data-anchor-id="équilibre-de-nash">4.2 Équilibre de Nash</h3>
-<p>Dans le régime de capitulation, la dominance stricte ne tranche pas, mais le jeu conserve un unique équilibre de Nash en stratégies pures. Vérifions les profils.</p>
-<p>Le profil (W, W) n’est <em>pas</em> un équilibre : face à W, chaque joueur préfère dévier vers L (puisque <span class="math inline">b - \gamma &gt; -d</span>). Les profils (L, L) ne sont pas non plus des équilibres : face à L, chacun préfère dévier vers W (puisque <span class="math inline">b &gt; b - \gamma/2</span>). Restent les profils asymétriques. Dans (L, W), A lave et B attend : A obtient <span class="math inline">b - \gamma</span>, et ne peut améliorer son sort en déviant (dévier le ramènerait à <span class="math inline">-d &lt; b - \gamma</span>) ; B obtient <span class="math inline">b</span>, son meilleur gain possible, et ne dévie pas. <strong>(L, W) est un équilibre de Nash.</strong> Par symétrie, (W, L) l’est aussi.</p>
-<p>Le jeu possède donc deux équilibres asymétriques, dans chacun desquels une seule personne lave et l’autre profite. L’identité du laveur n’est pas déterminée par le modèle. Elle est déterminée, dans la pratique, par celui des deux qui a le seuil de tolérance <span class="math inline">d</span> le plus bas, c’est-à-dire par la personne que l’évier dérange en premier. Le modèle prédit ainsi un résultat que nos données autobiographiques confirment sans réserve : ce n’est jamais la même personne qui craque, sauf que si.</p>
-</section>
-<section id="le-jeu-répété-et-le-seuil-de-patience" class="level3">
-<h3 class="anchored" data-anchor-id="le-jeu-répété-et-le-seuil-de-patience">4.3 Le jeu répété et le seuil de patience</h3>
-<p>L’évier n’est pas lavé une fois. Il est lavé, ou non, chaque jour, indéfiniment, par les mêmes deux personnes. Cette répétition change-t-elle l’analyse ?</p>
-<p>Soit <span class="math inline">\delta \in [0, 1)</span> le facteur d’escompte commun, qui mesure le poids accordé au bien-être futur du ménage. Considérons la stratégie de réciprocité (<em>grim trigger</em>) : « je lave tant que tu as lavé ; à la première fois où tu attends pendant que je lave, j’attends pour toujours ». La coopération (L, L) à chaque période est soutenable comme équilibre si et seulement si le gain de la défection unique ne compense pas la punition future qu’elle déclenche. Le gain immédiat à dévier est <span class="math inline">b - (b - \gamma/2) = \gamma/2</span> ; la perte future, actualisée, est la différence entre le flux coopératif et le flux de défection mutuelle. La condition de soutenabilité s’écrit :</p>
-<p><span class="math display">\frac{\gamma/2}{1 - \delta} \;\le\; \frac{(b - \gamma/2) - (-d)}{1-\delta} \cdot \delta \quad\Longleftrightarrow\quad \delta \;\ge\; \delta^\* \equiv \frac{\gamma/2}{\,b + d - \gamma/2\,}. \tag{2}</span></p>
-<p>La coopération est soutenable si et seulement si <span class="math inline">\delta \ge \delta^\*</span>. Le seuil <span class="math inline">\delta^\*</span> croît avec le coût de l’effort <span class="math inline">\gamma</span> et décroît avec le bénéfice de la propreté <span class="math inline">b</span> et la désutilité de l’évier sale <span class="math inline">d</span>. La lecture est directe : la vaisselle partagée tient lorsque les deux personnes accordent assez de poids à l’avenir de leur cohabitation. C’est ce que l’on nomme, dans la littérature, <em>l’ombre du futur</em>.</p>
-<p>Le corollaire est moins réconfortant. Lorsque l’horizon se raccourcit (l’un des deux s’apprête à déménager, ou la relation se dégrade), δ chute, finit par passer sous δ*, et la coopération s’effondre. Le modèle prédit que l’évier se remplit dans les semaines qui précèdent une séparation. Nous ne commentons pas ce résultat.</p>
-</section>
-</section>
-<section id="où-le-modèle-casse" class="level2">
-<h2 class="anchored" data-anchor-id="où-le-modèle-casse">5. Où le modèle casse</h2>
-<p>Le modèle repose sur trois hypothèses qu’il convient d’exposer, car la cuisine les viole régulièrement.</p>
-<p><strong>Simultanéité.</strong> Nous avons supposé les actions choisies simultanément. En réalité, l’évier est un jeu séquentiel à information imparfaite : on observe l’état de l’évier, non l’intention de l’autre. Une assiette laissée le matin peut être un acte de défection ou une promesse de retour. Le modèle ne distingue pas les deux. Les occupants non plus, ce qui est l’origine de la plupart des conflits.</p>
-<p><strong>Symétrie des gains.</strong> Nous avons supposé <span class="math inline">b</span>, <span class="math inline">\gamma</span> et <span class="math inline">d</span> identiques entre joueurs. C’est faux. La désutilité <span class="math inline">d</span> de l’évier sale varie considérablement d’une personne à l’autre, et c’est précisément cette asymétrie, et non un quelconque sens des responsabilités, qui détermine qui lave. La personne au <span class="math inline">d</span> élevé n’est pas plus vertueuse. Elle est simplement moins capable de ne pas voir.</p>
-<p><strong>Connaissance commune des préférences.</strong> Nous avons supposé que chacun connaît les gains de l’autre. Mais une part substantielle du conflit domestique consiste, justement, à contester l’évaluation que l’autre fait de <span class="math inline">d</span> (« ça ne te dérange donc pas ? »), c’est-à-dire à renégocier la matrice elle-même. Le modèle prend la matrice comme donnée. Le ménage la prend comme sujet de dispute.</p>
-<p>Enfin, le modèle est muet sur le cas, théoriquement marginal mais empiriquement décisif, où l’un des deux lave <em>en silence et de façon ostentatoire</em>, ce qui transforme un acte coopératif en signal, voire en représailles. Cette configuration relève de la signalisation coûteuse, et nous la renvoyons à un article ultérieur.</p>
+<section id="lenjeu-se-consume" class="level2">
+<h2 class="anchored" data-anchor-id="lenjeu-se-consume">5. L’enjeu se consume</h2>
+<p>Trois hypothèses tiennent le modèle, et la dispute réelle les dément dans l’ordre où elle dure.</p>
+<p><strong>L’enjeu est fixe.</strong> Nous avons tenu <span class="math inline">v</span> pour constant. Il ne l’est pas. À mesure que le conflit dure, ce qu’on gagnerait à l’emporter se dégrade : la soirée qu’on défendait est déjà perdue, et l’excuse qu’on attendait n’aurait plus le même prix passé minuit. La guerre d’usure à enjeu décroissant a ses propres équilibres, plus brefs, parce que tenir devient inutile quand il n’y a plus rien à tenir. Le modèle à enjeu fixe surestime donc ce que les deux parties croient encore défendre à la troisième heure.</p>
+<p><strong>Le terrain n’est pas l’enjeu.</strong> Nous avons supposé l’enjeu séparable du conflit, comme une terre qu’on se dispute sans l’abîmer. Entre deux personnes liées, l’enjeu et le champ de bataille se confondent : ce qu’on se dispute, le lien, est aussi ce que la dispute use. Le vainqueur l’emporte donc sur un bien que sa victoire a entamé, et la dissipation de la section 3 sous-estime le coût réel, puisqu’elle compte les heures perdues mais non l’objet, commun, qu’elles ont endommagé. C’est la même configuration que pour le frigo (Autrice, 2026d) : le terrain partagé est ce qu’on épuise en s’en servant.</p>
+<p><strong>On ignore la résolution de l’autre.</strong> Le modèle suppose chaque joueur informé de l’enjeu et du coût de l’autre. En pratique on ignore combien l’autre tient à l’emporter, et tenir devient alors un signal : durer, c’est prétendre qu’on durera. La dispute est aussi un jeu d’information, où l’on ne se bat pas seulement pour l’enjeu mais pour faire croire qu’on le valorise assez pour ne jamais céder. Cette dimension, que nous laissons à une étude ultérieure, n’allège pas la guerre. Elle lui donne une raison de plus de commencer.</p>
 </section>
 <section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">6. Conclusion</h2>
-<p>L’évier déborde parce que chacun, de son propre point de vue, agit raisonnablement. C’est le scandale tranquille du dilemme du prisonnier : deux personnes parfaitement raisonnables fabriquent ensemble un résultat qu’aucune des deux ne veut. La propreté est un bien que l’on partage, l’effort un coût que l’on porte seul, et tant que cette asymétrie tient, attendre reste la réponse individuellement juste. Une seule chose retient la coopération de s’effondrer, la condition <span class="math inline">\delta \ge \delta^*</span> : il faut que les deux accordent à l’avenir de leur cohabitation plus de poids qu’au répit d’un soir. Sous ce seuil, la vaisselle gagne, et elle gagne souvent.</p>
-<p>En matière de politique domestique, la théorie suggère un dispositif d’engagement : un tableau de répartition des tâches, qui attache un coût de réputation à la défection et transforme ainsi le jeu. Nous notons toutefois, sans pouvoir le résoudre, que la tenue à jour d’un tel tableau est elle-même un bien public non excluable, et donc soumise exactement au dilemme qu’il est censé dissoudre. Le tableau, dans nos observations, n’a jamais été rempli au-delà du jeudi de la première semaine.</p>
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Une dispute s’éternise non parce que l’un des deux a tort et s’entête, mais parce que tenir est, pour chacun, une réponse rationnelle tant que l’autre tient. Le coût court pour les deux, l’enjeu ne revient qu’à un seul, et entre ces deux faits s’ouvre exactement l’espace où une soirée se consume sans que rien se décide. Le modèle en tire la conséquence que l’on préférerait ignorer : le gain espéré de la victoire est nul, parce que la guerre qu’elle exige coûte, en moyenne, tout ce qu’elle rapporte. Avoir le dernier mot n’est pas sans valeur. C’est seulement un bien dont le prix, payé en heures et en silence, égale ce qu’il vaut, et qui se prélève sur la chose même que les deux croyaient défendre. Le vainqueur d’une dispute prolongée tient à la fin quelque chose d’exactement aussi cher que ce qu’il a dépensé pour l’obtenir, et il le tient seul, dans une pièce où l’autre s’est tu.</p>
 <hr>
 </section>
 <section id="références" class="level2">
 <h2 class="anchored" data-anchor-id="références">Références</h2>
-<p>Axelrod, R. (1984). <em>The Evolution of Cooperation</em>. New York : Basic Books.</p>
-<p>Hardin, G. (1968). « The Tragedy of the Commons ». <em>Science</em>, 162(3859), 1243–1248.</p>
-<p>Nash, J. F. (1950). « Equilibrium Points in n-Person Games ». <em>PNAS</em>, 36(1), 48–49.</p>
-<p>Nash, J. F. (1951). « Non-Cooperative Games ». <em>Annals of Mathematics</em>, 54(2), 286–295.</p>
-<p>Samuelson, P. A. (1954). « The Pure Theory of Public Expenditure ». <em>Review of Economics and Statistics</em>, 36(4), 387–389.</p>
-<p>Mère (1994). Communication personnelle. Récurrente.</p>
+<p>Bishop, D. T. et Cannings, C. (1978). « A Generalized War of Attrition ». <em>Journal of Theoretical Biology</em>, 70(1), 85–124.</p>
+<p>Bulow, J. et Klemperer, P. (1999). « The Generalized War of Attrition ». <em>American Economic Review</em>, 89(1), 175–189.</p>
+<p>Maynard Smith, J. (1974). « The Theory of Games and the Evolution of Animal Conflicts ». <em>Journal of Theoretical Biology</em>, 47(1), 209–221.</p>
+<p>Autrice (2026b). « Personne n’a défecté en premier : réciprocité, latence bruitée et l’extinction d’un fil de discussion à l’équilibre ». <em>The Journal of Applied Personal Econometrics</em>, dans ce volume.</p>
+<p>Autrice (2026d). « Le yaourt portait un prénom : le réfrigérateur partagé comme ressource commune ». <em>The Journal of Applied Personal Econometrics</em>, dans ce volume.</p>
 <hr>
 </section>
 <section id="remerciements" class="level2">
 <h2 class="anchored" data-anchor-id="remerciements">Remerciements</h2>
-<p>Je remercie l’autre occupant, sans qui ce problème n’existerait pas, et grâce à qui il existe. Aucun financement extérieur n’a été reçu ; le coût <span class="math inline">\gamma</span> a été supporté intégralement par l’autrice, comme le prévoit l’équilibre (L, W). L’autrice déclare un conflit d’intérêts : elle voulait que le modèle donne raison à une seule des deux parties, et constate avec une certaine froideur que c’est le cas.</p>
+<p>Je remercie l’autre partie, qui a cédé la première, et que je remercie surtout de me laisser l’écrire.</p>
+<p><strong>Préenregistrement.</strong> L’autrice certifie avoir formé l’hypothèse qu’elle avait raison avant la dispute, et non après l’avoir gagnée. Cette antériorité ne lui a servi à rien.</p>
+<p><strong>Approbation éthique.</strong> Aucun comité n’a supervisé la dispute. Aucun, du reste, n’aurait pu l’interrompre.</p>
 
 
 </section>
@@ -353,9 +300,8 @@ window.Quarto = {
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>L’unique autrice a financé cette recherche en nature, c’est-à-dire en faisant la vaisselle.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Cette étude ultérieure est déjà en cours. Elle ne se passe pas bien.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>On la rencontre néanmoins. Elle se reconnaît à l’odeur.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>L’autrice a eu le dernier mot dans la dispute ayant servi d’illustration. Elle ne se rappelle plus de quoi il s’agissait.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>On pourrait espérer que la dépendance entre l’issue et les paramètres rétablisse au moins une logique, par exemple que le plus endurant l’emporte. La guerre d’usure est précisément célèbre pour résister à cette lecture : son équilibre mixte admet des statiques comparatives contraires à l’intuition, et plusieurs équilibres coexistent. Nous nous en tenons donc à l’énoncé négatif, le seul qui soit robuste : ce n’est pas la raison qui gagne.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
