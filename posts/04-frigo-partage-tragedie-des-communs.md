@@ -1,14 +1,14 @@
 ---
 title: "Le yaourt portait un prénom"
 subtitle: "Le réfrigérateur partagé comme ressource commune, avec une caractérisation de la dissipation du surplus en fonction de la taille du foyer"
-description: "Un seul délai mal interprété suffit à éteindre un fil de discussion, sans qu'aucun des deux joueurs n'ait jamais défecté en premier."
-categories: ["Jeux répétés", "Monitoring imparfait", "Réciprocité"]
-order: 2
+description: "Le réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer."
+categories: ["Tragédie des communs", "Ressource commune", "Externalités"]
+order: 4
 title-block-banner: true
 include-in-header:
   text: |
     <style>
-      .quarto-title-banner { background: linear-gradient(135deg, #5b2a3a 0%, #7a3b3b 55%, #c9762f 100%); }
+      .quarto-title-banner { background: linear-gradient(135deg, #1b3a4b 0%, #2f6690 55%, #6ea8c9 100%); }
     </style>
 ---
 

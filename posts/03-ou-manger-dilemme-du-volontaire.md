@@ -1,14 +1,14 @@
 ---
 title: "Moi, ça m'est égal"
 subtitle: "Le choix collectif d'un restaurant comme dilemme du volontaire, avec dérivation de l'effet de la taille du groupe sur la probabilité qu'une décision soit prise"
-description: "Un seul délai mal interprété suffit à éteindre un fil de discussion, sans qu'aucun des deux joueurs n'ait jamais défecté en premier."
-categories: ["Jeux répétés", "Monitoring imparfait", "Réciprocité"]
-order: 2
+description: "Choisir un restaurant en groupe est un dilemme du volontaire : nul ne veut être celui qui décide, et le groupe décide d'autant moins qu'il est nombreux."
+categories: ["Dilemme du volontaire", "Biens publics", "Diffusion de la responsabilité"]
+order: 3
 title-block-banner: true
 include-in-header:
   text: |
     <style>
-      .quarto-title-banner { background: linear-gradient(135deg, #5b2a3a 0%, #7a3b3b 55%, #c9762f 100%); }
+      .quarto-title-banner { background: linear-gradient(135deg, #6b3a2f 0%, #b85c38 55%, #e8a33d 100%); }
     </style>
 ---
 
