@@ -8,8 +8,12 @@ website:
   navbar:
     logo: logo.svg
     left:
+      - text: "Accueil"
+        href: index.qmd
       - text: "Articles"
         href: articles.qmd
+      - text: "Conseils aux lecteurs"
+        href: conseils.qmd
       - text: "La revue"
         href: about.qmd
 
@@ -24,4 +28,3 @@ format:
     code-tools: false
     anchor-sections: true
     title-block-banner: true
-    title-block-banner-color: white

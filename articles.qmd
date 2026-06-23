@@ -5,10 +5,11 @@ listing:
   contents: posts
   sort: "order"                  # tri par numéro d'article, pas par date
   type: default
-  fields: [title, subtitle, description, categories]   # PAS de "date" → rien de temporel
-  field-display-names:
-    subtitle: "Sous-titre"
+  fields: [title, subtitle, categories]   # PAS de "date", PAS de "path"
   categories: true               # filtre par bloc dans la marge
+  sort-ui: false
+  filter-ui: false
+  date-format: ""                # ceinture et bretelles contre toute fuite de date
   feed: false
 page-layout: full
 ---

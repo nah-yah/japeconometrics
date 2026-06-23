@@ -224,11 +224,53 @@
     "text": "Footnotes\n\n\nL’unique autrice a financé cette recherche en nature, c’est-à-dire en faisant la vaisselle.↩︎\nCette étude ultérieure est déjà en cours. Elle ne se passe pas bien.↩︎\nOn la rencontre néanmoins. Elle se reconnaît à l’odeur.↩︎"
   },
   {
-    "objectID": "articles.html",
-    "href": "articles.html",
-    "title": "Tous les articles",
+    "objectID": "conseils.html",
+    "href": "conseils.html",
+    "title": "Conseils aux lecteurs",
     "section": "",
-    "text": "Tous les articles\nThéorie des jeux, décision, économétrie, dans l’ordre du calendrier éditorial, pas dans celui de la publication.\n\n\n\n\n\n\n\n\n\n\nDéfection mutuelle à l’équilibre\n\n\nUne caractérisation non coopérative de l’évier partagé\n\n\n\nDilemme du prisonnier\n\nBiens publics\n\nPassager clandestin\n\nCoopération\n\n\n\nL’évier déborde par rationalité : un dilemme du prisonnier ordinaire, avec son seuil de patience δ*.\n\n\n\n\n\n\n\n\n\n\nPersonne n’a défecté en premier\n\n\nRéciprocité, latence bruitée et l’extinction d’un fil de discussion à l’équilibre\n\n\n\nJeux répétés\n\nRéciprocité\n\n\n\nUn seul délai mal interprété suffit à éteindre un fil de discussion, sans qu’aucun des deux joueurs n’ait jamais défecté en premier.\n\n\n\n\n\n\n\n\n\n\nMoi, ça m’est égal\n\n\nLe choix collectif d’un restaurant comme dilemme du volontaire, avec dérivation de l’effet de la taille du groupe sur la probabilité qu’une décision soit prise\n\n\n\nDilemme du volontaire\n\nBiens publics\n\nDiffusion de la responsabilité\n\nStratégies mixtes\n\nTaille du groupe\n\n\n\nChoisir un restaurant en groupe est un dilemme du volontaire : nul ne veut être celui qui décide, et le groupe décide d’autant moins qu’il est nombreux.\n\n\n\n\n\n\n\n\n\n\nLe yaourt portait un prénom\n\n\nLe réfrigérateur partagé comme ressource commune, avec une caractérisation de la dissipation du surplus en fonction de la taille du foyer\n\n\n\nTragédie des communs\n\nRessource commune\n\nExternalités\n\n\n\nLe réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.\n\n\n\n\n\n\n\n\n\n\nAvoir le dernier mot\n\n\nLa dispute prolongée comme guerre d’usure, avec la dissipation intégrale de l’enjeu à l’équilibre\n\n\n\nTragédie des communs\n\nRessource commune\n\nExternalités\n\n\n\nLe réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Chaque article applique un seul modèle à la situation qu’il décrit, et le résout entièrement : équilibre, seuil, condition de premier ordre. Le lecteur qui chercherait une synthèse de plusieurs cadres concurrents ne la trouvera pas ici, par construction."
+  },
+  {
+    "objectID": "conseils.html#un-modèle-jusquau-bout",
+    "href": "conseils.html#un-modèle-jusquau-bout",
+    "title": "Conseils aux lecteurs",
+    "section": "",
+    "text": "Chaque article applique un seul modèle à la situation qu’il décrit, et le résout entièrement : équilibre, seuil, condition de premier ordre. Le lecteur qui chercherait une synthèse de plusieurs cadres concurrents ne la trouvera pas ici, par construction."
+  },
+  {
+    "objectID": "conseils.html#le-résumé-dit-déjà-tout",
+    "href": "conseils.html#le-résumé-dit-déjà-tout",
+    "title": "Conseils aux lecteurs",
+    "section": "Le résumé dit déjà tout",
+    "text": "Le résumé dit déjà tout\nLe résumé qui ouvre chaque article énonce sa conclusion. Ce n’est pas une maladresse, c’est la convention de la revue. Lire le corps de l’article sert à vérifier la démonstration, non à découvrir le résultat."
+  },
+  {
+    "objectID": "conseils.html#la-section-où-le-modèle-casse",
+    "href": "conseils.html#la-section-où-le-modèle-casse",
+    "title": "Conseils aux lecteurs",
+    "section": "La section où le modèle casse",
+    "text": "La section où le modèle casse\nChaque article se termine, avant sa conclusion, par une section qui expose les hypothèses du modèle et le moment où la situation réelle les viole. Le lecteur tenté de juger le modèle insuffisant est invité à lire cette section avant de conclure que l’autrice n’y avait pas pensé."
+  },
+  {
+    "objectID": "conseils.html#les-données-quand-il-y-en-a",
+    "href": "conseils.html#les-données-quand-il-y-en-a",
+    "title": "Conseils aux lecteurs",
+    "section": "Les données, quand il y en a",
+    "text": "Les données, quand il y en a\nUn article analytique ne contient pas de table de régression : il résout le modèle. Un article économétrique déclare toujours la nature de ses données, qu’il s’agisse d’un jeu de données public ou d’une série personnelle à n=1, et n’en présente jamais l’estimation comme généralisable au-delà du foyer qui l’a produite."
+  },
+  {
+    "objectID": "conseils.html#les-citations",
+    "href": "conseils.html#les-citations",
+    "title": "Conseils aux lecteurs",
+    "section": "Les citations",
+    "text": "Les citations\nLes citations attribuées à une autrice ou un auteur réel le sont avec exactitude. Une référence fictive se déclare toujours comme telle (« Mère, 1994, communication personnelle »). Les deux catégories ne se confondent jamais."
+  },
+  {
+    "objectID": "conseils.html#la-signature",
+    "href": "conseils.html#la-signature",
+    "title": "Conseils aux lecteurs",
+    "section": "La signature",
+    "text": "La signature\nL’autrice d’un article est, par convention de la revue, la partie qui a cédé en premier dans la situation qu’il décrit. Le lecteur tenté d’y voir une coïncidence est invité à relire l’ensemble du corpus."
   },
   {
     "objectID": "about.html",
@@ -273,18 +315,32 @@
     "text": "Disponibilité des données\nLes données qui servent d’illustration aux articles sont des fils de discussion réels. Leur disponibilité varie ; certains se sont éteints à l’équilibre, comme prévu par le modèle qui les décrit."
   },
   {
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Tous les articles",
+    "section": "",
+    "text": "Tous les articles\nThéorie des jeux, décision, économétrie, dans l’ordre du calendrier éditorial, pas dans celui de la publication.\n\n\n\n\n\n\n\n\n\n\nDéfection mutuelle à l’équilibre\n\n\nUne caractérisation non coopérative de l’évier partagé\n\n\n\nDilemme du prisonnier\n\nBiens publics\n\nPassager clandestin\n\nCoopération\n\n\n\n\n\n\n\n\n\n\n\nPersonne n’a défecté en premier\n\n\nRéciprocité, latence bruitée et l’extinction d’un fil de discussion à l’équilibre\n\n\n\nJeux répétés\n\nRéciprocité\n\n\n\n\n\n\n\n\n\n\n\nMoi, ça m’est égal\n\n\nLe choix collectif d’un restaurant comme dilemme du volontaire, avec dérivation de l’effet de la taille du groupe sur la probabilité qu’une décision soit prise\n\n\n\nDilemme du volontaire\n\nBiens publics\n\nDiffusion de la responsabilité\n\nStratégies mixtes\n\nTaille du groupe\n\n\n\n\n\n\n\n\n\n\n\nLe yaourt portait un prénom\n\n\nLe réfrigérateur partagé comme ressource commune, avec une caractérisation de la dissipation du surplus en fonction de la taille du foyer\n\n\n\nTragédie des communs\n\nRessource commune\n\nExternalités\n\n\n\n\n\n\n\n\n\n\n\nAvoir le dernier mot\n\n\nLa dispute prolongée comme guerre d’usure, avec la dissipation intégrale de l’enjeu à l’équilibre\n\n\n\nGuerre d'usure\n\nJeu de temporisation\n\nDissipation de rente\n\nConflit\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "The Journal of Applied Personal Econometrics",
     "section": "",
-    "text": "Théorie des jeux, décision, économétrie : aucun bien domestique n’est trop petit pour une matrice de gains. Comité de lecture : un seul lecteur.\n\nLire les articles La revue"
+    "text": "Théorie des jeux, décision, économétrie : aucun bien domestique n’est trop petit pour une matrice de gains. Comité de lecture : un seul lecteur."
+  },
+  {
+    "objectID": "index.html#à-la-une",
+    "href": "index.html#à-la-une",
+    "title": "The Journal of Applied Personal Econometrics",
+    "section": "À la une",
+    "text": "À la une\n\n\n\n\n\nAvoir le dernier mot\n\n\nLa dispute prolongée comme guerre d’usure, avec la dissipation intégrale de l’enjeu à l’équilibre\n\n\nTenir bon dans une dispute est une guerre d’usure : à l’équilibre, l’attente consume exactement ce qu’il y avait à gagner, et le dernier mot ne vaut plus rien.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#derniers-articles",
     "href": "index.html#derniers-articles",
     "title": "The Journal of Applied Personal Econometrics",
     "section": "Derniers articles",
-    "text": "Derniers articles\n\n\n\n\n\nLe yaourt portait un prénom\n\n\nLe réfrigérateur partagé comme ressource commune, avec une caractérisation de la dissipation du surplus en fonction de la taille du foyer\n\n\nLe réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.\n\n\n\n\n\n\n\n\n\n\nAvoir le dernier mot\n\n\nLa dispute prolongée comme guerre d’usure, avec la dissipation intégrale de l’enjeu à l’équilibre\n\n\nLe réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.\n\n\n\n\n\n\n\n\n\n\nMoi, ça m’est égal\n\n\nLe choix collectif d’un restaurant comme dilemme du volontaire, avec dérivation de l’effet de la taille du groupe sur la probabilité qu’une décision soit prise\n\n\nChoisir un restaurant en groupe est un dilemme du volontaire : nul ne veut être celui qui décide, et le groupe décide d’autant moins qu’il est nombreux.\n\n\n\n\n\n\n\n\nNo matching items\n\nTous les articles →"
+    "text": "Derniers articles\n\n\n\n\n\nLe yaourt portait un prénom\n\n\nLe réfrigérateur partagé comme ressource commune, avec une caractérisation de la dissipation du surplus en fonction de la taille du foyer\n\n\n\n\n\n\n\n\n\n\nMoi, ça m’est égal\n\n\nLe choix collectif d’un restaurant comme dilemme du volontaire, avec dérivation de l’effet de la taille du groupe sur la probabilité qu’une décision soit prise\n\n\n\n\n\n\n\n\n\n\nPersonne n’a défecté en premier\n\n\nRéciprocité, latence bruitée et l’extinction d’un fil de discussion à l’équilibre\n\n\n\n\n\n\n\n\nNo matching items\n\nTous les articles →"
   },
   {
     "objectID": "posts/02-qui-texte-en-premier-jeux-repetes.html",

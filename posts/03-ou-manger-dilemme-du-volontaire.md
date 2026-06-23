@@ -5,11 +5,6 @@ description: "Choisir un restaurant en groupe est un dilemme du volontaire : nul
 categories: ["Dilemme du volontaire", "Biens publics", "Diffusion de la responsabilité", "Stratégies mixtes", "Taille du groupe"]
 order: 3
 title-block-banner: true
-include-in-header:
-  text: |
-    <style>
-      .quarto-title-banner { background: linear-gradient(135deg, #6b3a2f 0%, #b85c38 55%, #e8a33d 100%); }
-    </style>
 ---
 
 **Autrice :** celle à qui c'était égal[^1]  

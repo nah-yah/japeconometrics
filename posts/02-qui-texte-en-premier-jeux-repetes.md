@@ -5,11 +5,6 @@ description: "Un seul délai mal interprété suffit à éteindre un fil de disc
 categories: ["Jeux répétés", "Réciprocité"]
 order: 2
 title-block-banner: true
-include-in-header:
-  text: |
-    <style>
-      .quarto-title-banner { background: linear-gradient(135deg, #5b2a3a 0%, #7a3b3b 55%, #c9762f 100%); }
-    </style>
 ---
 
 **Autrice :** celle qui tenait le compte[^1]  

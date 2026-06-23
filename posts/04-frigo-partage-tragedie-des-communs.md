@@ -5,11 +5,6 @@ description: "Le réfrigérateur partagé comme ressource commune : la surexploi
 categories: ["Tragédie des communs", "Ressource commune", "Externalités"]
 order: 4
 title-block-banner: true
-include-in-header:
-  text: |
-    <style>
-      .quarto-title-banner { background: linear-gradient(135deg, #1b3a4b 0%, #2f6690 55%, #6ea8c9 100%); }
-    </style>
 ---
 
 **Autrice :** celle qui a fini le lait[^1]  

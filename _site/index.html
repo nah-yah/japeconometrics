@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-5e145ff3ea3652a9b9d30a1e60fe8cf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2cb31be66b213c1a73f7620c989c587e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d03e942662edd51367ba282281679af0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-derniers-articles .list');
+    const listingTargetEl = window.document.querySelector('#listing-jape-featured .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -88,7 +88,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-derniers-articles'] = new List('listing-derniers-articles', options);
+    window['quarto-listings']['listing-jape-featured'] = new List('listing-jape-featured', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-jape-recents .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-jape-recents'] = new List('listing-jape-recents', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -170,8 +198,16 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./articles.html"> 
 <span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./conseils.html"> 
+<span class="menu-text">Conseils aux lecteurs</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
@@ -193,7 +229,7 @@ window.Quarto = {
     <h2 id="toc-title">Sommaire</h2>
    
   <ul>
-  <li><a href="#the-journal-of-applied-personal-econometrics" id="toc-the-journal-of-applied-personal-econometrics" class="nav-link active" data-scroll-target="#the-journal-of-applied-personal-econometrics">The Journal of Applied Personal Econometrics</a></li>
+  <li><a href="#à-la-une" id="toc-à-la-une" class="nav-link active" data-scroll-target="#à-la-une">À la une</a></li>
   <li><a href="#derniers-articles" id="toc-derniers-articles" class="nav-link" data-scroll-target="#derniers-articles">Derniers articles</a></li>
   </ul>
 </nav>
@@ -204,35 +240,14 @@ window.Quarto = {
 
 
 
-<section id="the-journal-of-applied-personal-econometrics" class="level1 jape-masthead">
-<h1>The Journal of Applied Personal Econometrics</h1>
+<div class="jape-masthead">
 <p>Théorie des jeux, décision, économétrie : aucun bien domestique n’est trop petit pour une matrice de gains. Comité de lecture : un seul lecteur.</p>
-<div class="jape-cta">
-<p><a href="./articles.html">Lire les articles</a> <a href="./about.html">La revue</a></p>
 </div>
-</section>
-<section id="derniers-articles" class="level2">
-<h2 class="anchored" data-anchor-id="derniers-articles">Derniers articles</h2>
-<div id="listing-derniers-articles" class="quarto-listing quarto-listing-container-default">
+<section id="à-la-une" class="level2">
+<h2 class="anchored" data-anchor-id="à-la-une">À la une</h2>
+<div id="listing-jape-featured" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="VHJhZyVDMyVBOWRpZSUyMGRlcyUyMGNvbW11bnMlMkNSZXNzb3VyY2UlMjBjb21tdW5lJTJDRXh0ZXJuYWxpdCVDMyVBOXM=" data-listing-file-modified-sort="1782105900476" data-listing-reading-time-sort="11" data-listing-word-count-sort="2110">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/04-frigo-partage-tragedie-des-communs.html" class="no-external">Le yaourt portait un prénom</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/04-frigo-partage-tragedie-des-communs.html" class="no-external">Le réfrigérateur partagé comme ressource commune, avec une caractérisation de la dissipation du surplus en fonction de la taille du foyer</a>
-</div>
-<div class="delink listing-description"><a href="./posts/04-frigo-partage-tragedie-des-communs.html" class="no-external">
-<p>Le réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/04-frigo-partage-tragedie-des-communs.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="VHJhZyVDMyVBOWRpZSUyMGRlcyUyMGNvbW11bnMlMkNSZXNzb3VyY2UlMjBjb21tdW5lJTJDRXh0ZXJuYWxpdCVDMyVBOXM=" data-listing-file-modified-sort="1782105775411" data-listing-reading-time-sort="12" data-listing-word-count-sort="2214">
+<div class="quarto-post image-right" data-index="0" data-categories="R3VlcnJlJTIwZCd1c3VyZSUyQ0pldSUyMGRlJTIwdGVtcG9yaXNhdGlvbiUyQ0Rpc3NpcGF0aW9uJTIwZGUlMjByZW50ZSUyQ0NvbmZsaXQ=" data-listing-file-modified-sort="1782160290968" data-listing-reading-time-sort="12" data-listing-word-count-sort="2214">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/05-dispute-guerre-d-usure.html" class="no-external">Avoir le dernier mot</a>
@@ -241,7 +256,7 @@ window.Quarto = {
 <a href="./posts/05-dispute-guerre-d-usure.html" class="no-external">La dispute prolongée comme guerre d’usure, avec la dissipation intégrale de l’enjeu à l’équilibre</a>
 </div>
 <div class="delink listing-description"><a href="./posts/05-dispute-guerre-d-usure.html" class="no-external">
-<p>Le réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer.</p>
+<p>Tenir bon dans une dispute est une guerre d’usure : à l’équilibre, l’attente consume exactement ce qu’il y avait à gagner, et le dernier mot ne vaut plus rien.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -249,7 +264,29 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="RGlsZW1tZSUyMGR1JTIwdm9sb250YWlyZSUyQ0JpZW5zJTIwcHVibGljcyUyQ0RpZmZ1c2lvbiUyMGRlJTIwbGElMjByZXNwb25zYWJpbGl0JUMzJUE5JTJDU3RyYXQlQzMlQTlnaWVzJTIwbWl4dGVzJTJDVGFpbGxlJTIwZHUlMjBncm91cGU=" data-listing-file-modified-sort="1782105854258" data-listing-reading-time-sort="12" data-listing-word-count-sort="2267">
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="derniers-articles" class="level2">
+<h2 class="anchored" data-anchor-id="derniers-articles">Derniers articles</h2>
+<div id="listing-jape-recents" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="VHJhZyVDMyVBOWRpZSUyMGRlcyUyMGNvbW11bnMlMkNSZXNzb3VyY2UlMjBjb21tdW5lJTJDRXh0ZXJuYWxpdCVDMyVBOXM=" data-listing-file-modified-sort="1782160288568" data-listing-reading-time-sort="11" data-listing-word-count-sort="2110">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/04-frigo-partage-tragedie-des-communs.html" class="no-external">Le yaourt portait un prénom</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/04-frigo-partage-tragedie-des-communs.html" class="no-external">Le réfrigérateur partagé comme ressource commune, avec une caractérisation de la dissipation du surplus en fonction de la taille du foyer</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/04-frigo-partage-tragedie-des-communs.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RGlsZW1tZSUyMGR1JTIwdm9sb250YWlyZSUyQ0JpZW5zJTIwcHVibGljcyUyQ0RpZmZ1c2lvbiUyMGRlJTIwbGElMjByZXNwb25zYWJpbGl0JUMzJUE5JTJDU3RyYXQlQzMlQTlnaWVzJTIwbWl4dGVzJTJDVGFpbGxlJTIwZHUlMjBncm91cGU=" data-listing-file-modified-sort="1782160286672" data-listing-reading-time-sort="12" data-listing-word-count-sort="2267">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/03-ou-manger-dilemme-du-volontaire.html" class="no-external">Moi, ça m’est égal</a>
@@ -257,12 +294,23 @@ window.Quarto = {
 <div class="listing-subtitle">
 <a href="./posts/03-ou-manger-dilemme-du-volontaire.html" class="no-external">Le choix collectif d’un restaurant comme dilemme du volontaire, avec dérivation de l’effet de la taille du groupe sur la probabilité qu’une décision soit prise</a>
 </div>
-<div class="delink listing-description"><a href="./posts/03-ou-manger-dilemme-du-volontaire.html" class="no-external">
-<p>Choisir un restaurant en groupe est un dilemme du volontaire : nul ne veut être celui qui décide, et le groupe décide d’autant moins qu’il est nombreux.</p>
-</a></div>
 </div>
 <div class="metadata">
 <a href="./posts/03-ou-manger-dilemme-du-volontaire.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="SmV1eCUyMHIlQzMlQTlwJUMzJUE5dCVDMyVBOXMlMkNSJUMzJUE5Y2lwcm9jaXQlQzMlQTk=" data-listing-file-modified-sort="1782160283755" data-listing-reading-time-sort="16" data-listing-word-count-sort="3055">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/02-qui-texte-en-premier-jeux-repetes.html" class="no-external">Personne n’a défecté en premier</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/02-qui-texte-en-premier-jeux-repetes.html" class="no-external">Réciprocité, latence bruitée et l’extinction d’un fil de discussion à l’équilibre</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/02-qui-texte-en-premier-jeux-repetes.html" class="no-external">
 </a>
 </div>
 </div>
@@ -276,6 +324,11 @@ window.Quarto = {
 </section>
 
 </main> <!-- /main -->
+<!-- Pied de page de l'accueil uniquement, branché via le
+     include-after-body du front matter de index.qmd. -->
+<footer class="jape-footer">
+  <p>The Journal of Applied Personal Econometrics. Comité de lecture : un seul lecteur.</p>
+</footer>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

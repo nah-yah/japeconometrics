@@ -5,11 +5,6 @@ description: "L'évier déborde par rationalité : un dilemme du prisonnier ordi
 categories: ["Dilemme du prisonnier", "Biens publics", "Passager clandestin", "Coopération"]
 order: 1
 title-block-banner: true
-include-in-header:
-  text: |
-    <style>
-      .quarto-title-banner { background: linear-gradient(135deg, #1d2b4f 0%, #3c3163 55%, #8a4b6b 100%); }
-    </style>
 ---
 
 **Autrice :** celle qui a lavé[^1]  

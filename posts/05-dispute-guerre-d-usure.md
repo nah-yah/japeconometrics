@@ -1,15 +1,10 @@
 ---
 title: "Avoir le dernier mot"
 subtitle: "La dispute prolongée comme guerre d'usure, avec la dissipation intégrale de l'enjeu à l'équilibre"
-description: "Le réfrigérateur partagé comme ressource commune : la surexploitation et la dissipation du surplus croissent avec la taille du foyer."
-categories: ["Tragédie des communs", "Ressource commune", "Externalités"]
-order: 4
+description: "Tenir bon dans une dispute est une guerre d'usure : à l'équilibre, l'attente consume exactement ce qu'il y avait à gagner, et le dernier mot ne vaut plus rien."
+categories: ["Guerre d'usure", "Jeu de temporisation", "Dissipation de rente", "Conflit"]
+order: 5
 title-block-banner: true
-include-in-header:
-  text: |
-    <style>
-      .quarto-title-banner { background: linear-gradient(135deg, #1b3a4b 0%, #2f6690 55%, #6ea8c9 100%); }
-    </style>
 ---
 
 **Autrice :** celle qui a eu le dernier mot[^1]  

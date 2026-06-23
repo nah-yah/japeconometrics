@@ -1,0 +1,30 @@
+---
+title: "Conseils aux lecteurs"
+subtitle: "Comment lire un article de cette revue"
+title-block-banner: true
+page-layout: article
+---
+
+## Un modèle, jusqu'au bout
+
+Chaque article applique un seul modèle à la situation qu'il décrit, et le résout entièrement : équilibre, seuil, condition de premier ordre. Le lecteur qui chercherait une synthèse de plusieurs cadres concurrents ne la trouvera pas ici, par construction.
+
+## Le résumé dit déjà tout
+
+Le résumé qui ouvre chaque article énonce sa conclusion. Ce n'est pas une maladresse, c'est la convention de la revue. Lire le corps de l'article sert à vérifier la démonstration, non à découvrir le résultat.
+
+## La section où le modèle casse
+
+Chaque article se termine, avant sa conclusion, par une section qui expose les hypothèses du modèle et le moment où la situation réelle les viole. Le lecteur tenté de juger le modèle insuffisant est invité à lire cette section avant de conclure que l'autrice n'y avait pas pensé.
+
+## Les données, quand il y en a
+
+Un article analytique ne contient pas de table de régression : il résout le modèle. Un article économétrique déclare toujours la nature de ses données, qu'il s'agisse d'un jeu de données public ou d'une série personnelle à $n=1$, et n'en présente jamais l'estimation comme généralisable au-delà du foyer qui l'a produite.
+
+## Les citations
+
+Les citations attribuées à une autrice ou un auteur réel le sont avec exactitude. Une référence fictive se déclare toujours comme telle (« Mère, 1994, communication personnelle »). Les deux catégories ne se confondent jamais.
+
+## La signature
+
+L'autrice d'un article est, par convention de la revue, la partie qui a cédé en premier dans la situation qu'il décrit. Le lecteur tenté d'y voir une coïncidence est invité à relire l'ensemble du corpus.

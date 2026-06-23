@@ -2,33 +2,48 @@
 title: ""
 title-block-banner: false
 page-layout: full
+include-after-body: _footer.html
 listing:
-  - id: derniers-articles
+  - id: jape-featured
     contents: posts
-    sort: "order desc"            # les plus récents dans le calendrier éditorial
+    sort: "order desc"             # le plus récent du calendrier éditorial
     type: default
-    max-items: 3
+    max-items: 1
     fields: [title, subtitle, description]
-    field-display-names:
-      subtitle: "Sous-titre"
     sort-ui: false
     filter-ui: false
     categories: false
+    date-format: ""
+    feed: false
+  - id: jape-recents
+    contents: posts
+    sort: "order desc"
+    type: default
+    # order du dernier article (celui mis en avant ci-dessus) : à incrémenter
+    # à chaque nouvelle parution pour qu'il ne se répète pas dans cette liste.
+    exclude:
+      order: 5
+    max-items: 3
+    fields: [title, subtitle]
+    sort-ui: false
+    filter-ui: false
+    categories: false
+    date-format: ""
     feed: false
 ---
 
 ::: {.jape-masthead}
-# The Journal of Applied Personal Econometrics
 Théorie des jeux, décision, économétrie : aucun bien domestique n'est trop petit pour une matrice de gains. Comité de lecture : un seul lecteur.
-
-::: {.jape-cta}
-[Lire les articles](articles.qmd) [La revue](about.qmd)
 :::
+
+## À la une
+
+::: {#jape-featured}
 :::
 
 ## Derniers articles
 
-::: {#derniers-articles}
+::: {#jape-recents}
 :::
 
 [Tous les articles →](articles.qmd){.jape-more}
