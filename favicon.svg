@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JAPE">
+  <rect width="64" height="64" fill="#F7F3EA"/>
+  <g fill="none" stroke="#6E1F23" stroke-width="3.4">
+    <circle cx="26" cy="32" r="14"/>
+    <circle cx="38" cy="32" r="14"/>
+  </g>
+</svg>

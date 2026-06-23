@@ -5,6 +5,7 @@ project:
 website:
   title: "The Journal of Applied Personal Econometrics"
   description: "Théorie des jeux, théorie de la décision, économétrie : appliquées aux situations domestiques et sentimentales que l'économie avait laissées de côté."
+  favicon: favicon.svg
   navbar:
     logo: logo.svg
     left:
